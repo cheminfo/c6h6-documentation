@@ -5,21 +5,20 @@
 
 ## Samples
 
-* [Create and edit a sample](samples/create-and-edit-a-sample/README.md)
-  * [A subpage](samples/create-and-edit-a-sample/a-subpage/README.md)
-    * [A subsubpage](samples/create-and-edit-a-sample/a-subpage/a-subsubpage.md)
+* [Create and edit a sample](samples/create-and-edit-a-sample.md)
 * [Structure search](samples/substructure-search.md)
 * [Submit to Zenodo](samples/submit-to-zenodo.md)
 * [Lipinski search](samples/lipinski-search.md)
-* [HSQC / HMBC prediction](samples/hsqc-hmbc-prediction.md)
-* [Peak picking and assignment](samples/peak-picking-and-assignment.md)
-* [Superimposition](samples/superimposition.md)
 
 ## NMR spectroscopy
 
-* [1H prediction](nmr/untitled.md)
-* [13C prediction](nmr/13c-prediction.md)
-* [COSY prediction](nmr/cosy-prediction.md)
+* [Peak picking and assignment](nmr/peak-picking-and-assignment.md)
+* [Superimposition](nmr/superimposition.md)
+* [Predictions](nmr/predictions/README.md)
+  * [1H prediction](nmr/predictions/1h-prediction.md)
+  * [13C prediction](nmr/predictions/13c-prediction.md)
+  * [COSY prediction](nmr/predictions/cosy-prediction.md)
+  * [HSQC / HMBC prediction](nmr/predictions/hsqc-hmbc-prediction.md)
 
 ## Mass spectrometry
 
@@ -45,4 +44,9 @@
 ## Image processing
 
 * [TEM images analysis](image-processing/tem-images-analysis.md)
+
+## Tools
+
+* [JSME](tools/jsme.md)
+* [OCL editor](tools/ocl-editor.md)
 

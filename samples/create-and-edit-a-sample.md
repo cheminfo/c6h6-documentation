@@ -1,7 +1,5 @@
 # Create and edit a sample
 
-Edit a sample user guide
-
 You will see several modules covering the canvas and a few buttons. The buttons are there to Save your sample, to display this Help, and to generate a Report. The modules allow you to edit your sample’s data, to upload your spectra, and to display your spectra and other non-editable sample attributes.
 
 Sample code: The sample’s unique identifier, defined at creation \(i.e. CAS number\). Non-editable.

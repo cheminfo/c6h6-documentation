@@ -1,3 +1,7 @@
+---
+description: Predict 2D COSY NMR spectra
+---
+
 # COSY prediction
 
 Draw a chemical structure to predict and click Calculate to calculate and display its COSY. Originally the structure of the currently selected sample will be already drawn so that you may go ahead and simulate its spectrum right away.

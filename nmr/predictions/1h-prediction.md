@@ -1,3 +1,7 @@
+---
+description: Predict 1D proton NMR spectra
+---
+
 # 1H prediction
 
 Draw a chemical structure to predict and click Calculate spectrum to calculate and display the simulated 1H NMR spectra. Originally the structure of the currently selected sample will be already drawn so that you may go ahead and simulate its spectrum right away.
