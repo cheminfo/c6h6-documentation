@@ -2,14 +2,20 @@
 
 * [Initial page](README.md)
 
-## NMR
+## Samples
+
+* [Create and edit a sample](samples/create-and-edit-a-sample.md)
+
+## NMR spectroscopy
 
 * [Untitled](nmr/untitled.md)
 
-## Mass spectra
+## Mass spectrometry
 
-* [GC / LC - MS visualization](mass/gc-lc-ms-visualization.md)
 * [Untitled](mass/untitled-3.md)
-* [Untitled](mass/untitled-2.md)
-* [Untitled](mass/untitled-1.md)
+
+## Chromatography
+
+* [GC / LC - MS visualization](chromatography/gc-lc-ms-visualization.md)
+* [GC / LC - MS High resolution](chromatography/gc-lc-ms-high-resolution.md)
 
