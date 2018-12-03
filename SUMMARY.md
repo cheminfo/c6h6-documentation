@@ -5,7 +5,9 @@
 
 ## Samples
 
-* [Create and edit a sample](samples/create-and-edit-a-sample.md)
+* [Create and edit a sample](samples/create-and-edit-a-sample/README.md)
+  * [A subpage](samples/create-and-edit-a-sample/a-subpage/README.md)
+    * [A subsubpage](samples/create-and-edit-a-sample/a-subpage/a-subsubpage.md)
 * [Structure search](samples/substructure-search.md)
 * [Submit to Zenodo](samples/submit-to-zenodo.md)
 * [Lipinski search](samples/lipinski-search.md)
