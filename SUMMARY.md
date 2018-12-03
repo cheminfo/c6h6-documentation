@@ -9,10 +9,15 @@
 * [Structure search](samples/substructure-search.md)
 * [Submit to Zenodo](samples/submit-to-zenodo.md)
 * [Lipinski search](samples/lipinski-search.md)
+* [HSQC / HMBC prediction](samples/hsqc-hmbc-prediction.md)
+* [Peak picking and assignment](samples/peak-picking-and-assignment.md)
+* [Superimposition](samples/superimposition.md)
 
 ## NMR spectroscopy
 
-* [Untitled](nmr/untitled.md)
+* [1H prediction](nmr/untitled.md)
+* [13C prediction](nmr/13c-prediction.md)
+* [COSY prediction](nmr/cosy-prediction.md)
 
 ## Mass spectrometry
 
