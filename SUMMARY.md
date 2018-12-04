@@ -47,6 +47,8 @@
 
 ## Tools
 
-* [JSME](tools/jsme.md)
-* [OCL editor](tools/ocl-editor.md)
+* [Chemistry](tools/chemistry/README.md)
+  * [JSME](tools/chemistry/jsme.md)
+  * [Spectra displayer](tools/chemistry/spectra-displayer.md)
+  * [OCL editor](tools/chemistry/ocl-editor.md)
 
