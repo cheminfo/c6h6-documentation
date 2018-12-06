@@ -50,6 +50,6 @@
 * [Chemistry](tools/chemistry/README.md)
   * [JSME](tools/science/chemistry/jsme.md)
   * [OCL editor](tools/science/chemistry/ocl-editor.md)
-  * [Spectra displayer](tools/science/spectra/spectra-displayer.md)
+  * [Spectra displayer](tools/science/spectra/mass/spectra-displayer.md)
   
 
