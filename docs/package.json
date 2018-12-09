@@ -1,11 +1,11 @@
 {
   "name": "c6h6-documentation",
   "version": "1.0.0",
-  "description": "Check our youtube video:",
+  "description": "C6H6 documentation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gitbook build"
+    "build-docs": "gitbook build -- . docs"
   },
   "repository": {
     "type": "git",
