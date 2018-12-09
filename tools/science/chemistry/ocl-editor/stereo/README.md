@@ -30,23 +30,23 @@ As an alternative you can also specify that the configuration of the chiral cent
 
 ![chlorobutane-both.png](chlorobutane-unknown.png)
 
-### Two chiral center: 2,3-bromochlorobutane
+### Two chiral centers: 2,3-bromochlorobutane
 
-Each chiral center can be addressed separately and many possibilites exist. Couple of examples
+Each chiral center can be addressed separately and many possibilites exist. Couple of examples:
 
-You have 2 chiral centers but the relation between the 2 centers is fixed and you obtain a pair of enantiomers (racemate):
+* *2 chiral centers but the relation between the 2 centers is fixed and you obtain a pair of enantiomers (racemate):
 
 ![bromochlorobutane-racemate.png](bromochlorobutane-racemate.png)
 
-You obtain only one enantiomer and you know the relationship between the 2 chiral centers:
+* only one enantiomer with known relationship between the 2 chiral centers:
 
 ![bromochlorobutane-enantiomer.png](bromochlorobutane-enantiomer.png)
 
-You know the absolute configuration of one of the chiral center and you have only one of the 2 possible diastereoisomers:
+* absolute configuration of one of the chiral center and one of the 2 possible diastereoisomers:
 
 ![bromochlorobutane-onestereo.png](bromochlorobutane-onestereo.png)
 
-You know the absolute configuration of one of the chiral center and you have both possible diastereoisomers:
+* absolute configuration of one of the chiral center and both possible diastereoisomers:
 
 ![bromochlorobutane-epimerpng](bromochlorobutane-epimer.png)
 
