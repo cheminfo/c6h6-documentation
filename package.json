@@ -1,0 +1,24 @@
+{
+  "name": "c6h6-documentation",
+  "version": "1.0.0",
+  "description": "Check our youtube video:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gitbook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo/c6h6-documentation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheminfo/c6h6-documentation/issues"
+  },
+  "homepage": "https://github.com/cheminfo/c6h6-documentation#readme",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  }
+}
