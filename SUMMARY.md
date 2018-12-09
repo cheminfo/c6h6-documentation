@@ -47,6 +47,10 @@
 ## Tools
 
 - [Chemistry](tools/chemistry/README.md)
-  - [JSME](tools/science/chemistry/jsme.md)
-  - [OCL editor](tools/science/chemistry/ocl-editor.md)
+  - [JSME](tools/science/chemistry/jsme/README.md)
+  - [OCL editor](tools/science/chemistry/ocl-editor/README.md)
+    - [Stereochemistry](tools/science/chemistry/ocl-editor/stereo/README.md)
+    - [Special atoms](tools/science/chemistry/ocl-editor/special/README.md)
   - [Spectra displayer](tools/science/spectra/mass/spectra-displayer.md)
+  
+
