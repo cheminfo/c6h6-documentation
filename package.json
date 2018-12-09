@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-docs": "gitbook build -- . docs"
+    "build-docs": "gitbook build -- src docs"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,15 @@
   "homepage": "https://github.com/cheminfo/c6h6-documentation#readme",
   "dependencies": {
     "gitbook": "^3.2.3",
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-collapsible-menu": "^1.0.3",
+    "gitbook-plugin-toggle-chapters": "0.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-cheminfo": "^1.18.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-markdown": "^1.0.0-rc.0"
   }
 }

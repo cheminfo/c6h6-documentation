@@ -21,8 +21,8 @@
 
 ## Mass spectrometry
 
-- [Mass fragmentation](mass/untitled-3.md)
-- [Peptide and nucleotide fragmentation](mass/untitled.md)
+- [Mass fragmentation](mass/mass-fragmentation.md)
+- [Peptide and nucleotide fragmentation](mass/peptide-and-nucleotide-fragmentation.md)
 - [MF from monoisotopic mass](mass/mf-from-monoisotopic-mass.md)
 - [Structure and MF information](mass/structure-and-mf-information.md)
 
@@ -50,7 +50,7 @@
   - [JSME](tools/science/chemistry/jsme/README.md)
   - [OCL editor](tools/science/chemistry/ocl-editor/README.md)
     - [Stereochemistry](tools/science/chemistry/ocl-editor/stereo/README.md)
-    - [Special atoms](tools/science/chemistry/ocl-editor/special/README.md)
+    - [Atom properties](tools/science/chemistry/ocl-editor/atom-properties/README.md)
   - [Spectra displayer](tools/science/spectra/mass/spectra-displayer.md)
   
 
