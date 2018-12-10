@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-docs": "gitbook build -- src docs"
+    "build-docs": "gitbook build -- book docs"
   },
   "repository": {
     "type": "git",
