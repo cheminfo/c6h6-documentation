@@ -1,4 +1,8 @@
-- index
-- description: View dealing with samples
-- first: 1
-- last: 2
+description: Sample edition page
+tips:
+  - rev: 810
+    description: Get a structure from a template
+    name: structureTemplate
+  - rev: 810
+    description: Chirality of BINAP derivatives
+    name: binap
