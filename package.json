@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-docs; npm run build-tips",
     "build-docs": "npx gitbook-cli build -- book docs",
-    "build-tips": "npx gitbook-cli build -- tips/src tips/build"
+    "build-tips": "node tips/buildSummary.js && npx gitbook-cli build -- tips/src tips/build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,8 @@
     "gitbook": "^3.2.3",
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
-    "gitbook-plugin-toggle-chapters": "0.0.3"
+    "gitbook-plugin-toggle-chapters": "0.0.3",
+    "yaml": "^1.2.1"
   },
   "devDependencies": {
     "eslint": "^5.10.0",
