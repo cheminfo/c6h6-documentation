@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chirality of BINAP derivatives · GitBook</title>
+        <title>Molecular formula: isotopes · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../mfGroups/" />
+    <link rel="next" href="../mfSalt/" />
     
     
-    <link rel="prev" href="../structureTemplate/" />
+    <link rel="prev" href="../mfParenthesis/" />
     
 
     </head>
@@ -78,10 +78,11 @@
                     
                     <section class="normal markdown-section">
                         
-                        <h2 id="binap-and-axial-chirality">BINAP and axial chirality</h2>
-<p>The chemical structure editor (openchemlib) allows to specify the axial chirality of molecules for which rotation around a single bond is blocked.</p>
-<p>To specify the chirality you need to add a chiral bond on a <strong>single-bond</strong> that is next to the chiral bond.</p>
-<p><img src="binap.png"></p>
+                        <h2 id="molecular-formula-isotopes">Molecular formula: isotopes</h2>
+<p>While the molecular formula is calculated automatically from the chemical structure it is sometimes useful to directly edit the molecular formula.</p>
+<p>Isotopes have to be entered between square brackets like <code>[13C]</code>. There is one exception, <code>D</code> that is a synonym of <code>[2H]</code>.</p>
+<p><img src="isotopes.png"></p>
+<p>There is also the possibility to enter non natural isotopic ratio. In this case the ratio between all the stable isotopes will be placed between curly brackets and separated by a comma. ie if you have a molecule with 10 carbons having 20% [12C] and 80% [13C] you will enter <code>C{20,80}10</code>.</p>
 
                         
                     </section>
