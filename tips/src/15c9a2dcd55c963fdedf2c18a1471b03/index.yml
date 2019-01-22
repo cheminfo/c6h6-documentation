@@ -1,8 +1,10 @@
 description: Sample edition page
 tips:
-  - rev: 810
+  - minRev: 810
+    index: 1
     description: Get a structure from a template
     name: structureTemplate
-  - rev: 810
+  - minRev: 810
+    index: 2
     description: Chirality of BINAP derivatives
     name: binap
