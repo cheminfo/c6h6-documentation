@@ -1,5 +1,7 @@
-## Reload previous structures in the molecule editor
+## BINAP and axial chirality
 
-The view remembers the last 20 edited structure. If you want to start your new molecule from a previous one you may simply click on the history icon
+The chemical structure editor (openchemlib) allows to specify the axial chirality of molecules for which rotation around a single bond is blocked.
 
-The first tip
+To specify the chirality you need to add a chiral bond on a **single-bond** that is next to the chiral bond.
+
+<img src="binap.png">
