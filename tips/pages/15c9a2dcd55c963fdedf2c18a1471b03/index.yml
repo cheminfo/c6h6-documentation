@@ -1,0 +1,26 @@
+description: Sample edition
+tips:
+  - minRev: 810
+    index: 1
+    title: Get a structure from a template
+    name: structureTemplate
+  - minRev: 810
+    index: 2
+    title: Chirality of BINAP derivatives
+    name: binap
+  - minRev: 810
+    index: 3
+    title: 'Molecular formula: groups'
+    name: mfGroups
+  - minRev: 810
+    index: 4
+    title: 'Molecular formula: parenthesis'
+    name: mfParenthesis
+  - minRev: 810
+    index: 5
+    title: 'Molecular formula: isotopes'
+    name: mfIsotopes
+  - minRev: 810
+    index: 6
+    title: 'Molecular formula: salt'
+    name: mfSalt

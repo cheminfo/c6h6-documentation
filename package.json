@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-docs; npm run build-tips",
     "build-docs": "npx gitbook-cli build -- book docs",
-    "build-tips": "node tips/buildSummary.js && npx gitbook-cli build -- tips/src tips/build"
+    "build-tips": "node tips/buildSummary.js && node tips/build.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/cheminfo/c6h6-documentation#readme",
   "dependencies": {
+    "child-process-promise": "^2.2.1",
     "gitbook": "^3.2.3",
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
