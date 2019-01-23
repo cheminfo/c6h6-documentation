@@ -12,3 +12,7 @@ tips:
     index: 3
     title: Select a monoisotopic mass
     name: peakPicking
+  - minRev: 267
+    index: 4
+    title: Understanding the result table
+    name: results

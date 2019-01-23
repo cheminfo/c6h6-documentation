@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Select a monoisotopic mass · GitBook</title>
+        <title>Understanding the result table · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../results/" />
+    <link rel="next" href="../../a7448bb6798371144f9a5ecab184e100/upload/" />
     
     
-    <link rel="prev" href="../unsaturation/" />
+    <link rel="prev" href="../peakPicking/" />
     
 
     </head>
@@ -78,11 +78,21 @@
                     
                     <section class="normal markdown-section">
                         
-                        <h2 id="entering-a-monoisotopic-mass">Entering a monoisotopic mass</h2>
-<p>When loading an experimental spectrum the tool will automatically make a peak picking (centroid) that will be displayed on the spectrum.</p>
-<p>Zooming in the spectrum will progressively add more and more detailed peaks.</p>
-<p>If you are searching the molecular formula of an unknown products you should click on the label corresponding to the monoisotopic experimental mass.</p>
-<p><img src="peakPicking.gif"></p>
+                        <h2 id="results-table">Results table</h2>
+<p>This tool calculates on-the-fly the possible molecular formula based on a monoisotoipc mass and possible ionizations.</p>
+<p>The resulting table will contain green background lines if this molecular formula exists in PubChem. This is an excellent way to find plausible molecular formula of unknown products.</p>
+<p><img src="results.png"></p>
+<p>The results contains various columns:</p>
+<ul>
+<li>the NON-IONIZED molecular formula</li>
+<li>the monoisotopic mass of the NON-IONIZED molecule</li>
+<li>the unsaturation degree</li>
+<li>the ionization</li>
+<li>the observed mass</li>
+<li>the total charge (with ionization)</li>
+<li>the error in mDa</li>
+<li>the absolute value of the error in ppm</li>
+</ul>
 
                         
                     </section>
