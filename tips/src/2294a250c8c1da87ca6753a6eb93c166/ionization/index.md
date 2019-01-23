@@ -2,9 +2,9 @@
 
 In order to observe a neutral molecule the mass spectrometer will charge it using different techniques. This may involve adding protons, remove electrons, etc
 
-You can also observe some charges molecules resulting of the addition of Na<sup>+</sup>, K<sup>+</sup>, etc.
+You can also observe charged molecules resulting of the addition of Na<sup>+</sup>, K<sup>+</sup>, etc.
 
-In order to evaluate all the possibilities you must enter in the 'ionization' field a comma separated list of all the allowed ionizations.
+In order to evaluate all the possibilities you must enter in the 'ionizations' field a comma separated list of all the allowed ionizations.
 
 You may as well specify multiple charges. Here are some examples of allowed patterns:
 
