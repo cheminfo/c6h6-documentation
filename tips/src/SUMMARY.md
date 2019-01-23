@@ -11,6 +11,12 @@
 5. [Molecular formula: isotopes](15c9a2dcd55c963fdedf2c18a1471b03/mfIsotopes/index.md)
 6. [Molecular formula: salt](15c9a2dcd55c963fdedf2c18a1471b03/mfSalt/index.md)
 
+## View, upload and process high resolution mass spectra [](2294a250c8c1da87ca6753a6eb93c166/index.yml)
+
+1. [Ionizations](2294a250c8c1da87ca6753a6eb93c166/ionization/index.md)
+2. [Filter by unsaturation](2294a250c8c1da87ca6753a6eb93c166/unsaturation/index.md)
+3. [Select a monoisotopic mass](2294a250c8c1da87ca6753a6eb93c166/peakPicking/index.md)
+
 ## View, upload and peak picking IR spectra [](a7448bb6798371144f9a5ecab184e100/index.yml)
 
 1. [Upload IR spectra](a7448bb6798371144f9a5ecab184e100/upload/index.md)
