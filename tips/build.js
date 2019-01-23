@@ -8,7 +8,9 @@ const exec = require('child-process-promise').exec;
 build();
 
 async function build() {
-  await exec('npx gitbook-cli build -- tips/src tips/build');
+  await exec(
+    'node node_modules/gitbook-cli/bin/gitbook.js build -- tips/src tips/build'
+  );
   //  var stdout = result.stdout;
   //  var stderr = result.stderr;
 
@@ -18,7 +20,9 @@ async function build() {
     let summary = join(homedir, dir, 'SUMMARY.md');
     let readme = join(homedir, dir, 'README.md');
     if (fs.existsSync(summary) && fs.existsSync(readme)) {
-      await exec(`cd tips; npx gitbook-cli build -- src/${dir} pages/${dir}`);
+      await exec(
+        `cd tips; node ../node_modules/gitbook-cli/bin/gitbook.js build -- src/${dir} pages/${dir}`
+      );
     }
   }
 }

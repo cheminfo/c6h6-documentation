@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chirality of BINAP derivatives · GitBook</title>
+        <title>Understanding the result table · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../mfGroups/" />
+    <link rel="next" href="../../a7448bb6798371144f9a5ecab184e100/upload/" />
     
     
-    <link rel="prev" href="../structureTemplate/" />
+    <link rel="prev" href="../peakPicking/" />
     
 
     </head>
@@ -78,10 +78,21 @@
                     
                     <section class="normal markdown-section">
                         
-                        <h2 id="binap-and-axial-chirality">BINAP and axial chirality</h2>
-<p>The chemical structure editor (openchemlib) allows to specify the axial chirality of molecules for which rotation around a single bond is blocked.</p>
-<p>To specify the chirality you need to add a chiral bond on a <strong>single-bond</strong> that is next to the chiral bond.</p>
-<p><img src="binap.png"></p>
+                        <h2 id="results-table">Results table</h2>
+<p>This tool calculates on-the-fly the possible molecular formula based on a monoisotoipc mass and possible ionizations.</p>
+<p>The resulting table will contain green background lines if this molecular formula exists in PubChem. This is an excellent way to find plausible molecular formula of unknown products.</p>
+<p><img src="results.png"></p>
+<p>The results contains various columns:</p>
+<ul>
+<li>the NON-IONIZED molecular formula</li>
+<li>the monoisotopic mass of the NON-IONIZED molecule</li>
+<li>the unsaturation degree</li>
+<li>the ionization</li>
+<li>the observed mass</li>
+<li>the total charge (with ionization)</li>
+<li>the error in mDa</li>
+<li>the absolute value of the error in ppm</li>
+</ul>
 
                         
                     </section>

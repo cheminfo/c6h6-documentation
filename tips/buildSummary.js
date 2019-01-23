@@ -21,6 +21,7 @@ for (let dir of dirs) {
     let toc = YAML.parse(yaml);
     summary.push(`## ${toc.description} [](${dir}/index.yml)\n`);
     localSummary.push(`## ${toc.description} [](${dir}/index.yml)\n`);
+    localSummary.push('## TIPS\n');
     let tips = toc.tips.sort((a, b) => a.index - b.index);
     for (let tip of tips) {
       if (!tip.index || !tip.title || !tip.name) {

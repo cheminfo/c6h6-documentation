@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Chirality of BINAP derivatives · GitBook</title>
+        <title>Filter by unsaturation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../mfGroups/" />
+    <link rel="next" href="../peakPicking/" />
     
     
-    <link rel="prev" href="../structureTemplate/" />
+    <link rel="prev" href="../ionization/" />
     
 
     </head>
@@ -78,10 +78,17 @@
                     
                     <section class="normal markdown-section">
                         
-                        <h2 id="binap-and-axial-chirality">BINAP and axial chirality</h2>
-<p>The chemical structure editor (openchemlib) allows to specify the axial chirality of molecules for which rotation around a single bond is blocked.</p>
-<p>To specify the chirality you need to add a chiral bond on a <strong>single-bond</strong> that is next to the chiral bond.</p>
-<p><img src="binap.png"></p>
+                        <h2 id="filter-by-unsaturation">Filter by unsaturation</h2>
+<p>This tools search for possible molecular formula based on:</p>
+<ul>
+<li>a monoisotopic experimental mass</li>
+<li>one or many ionization possibilities</li>
+</ul>
+<p>The result can be further filtered by the <a href="https://en.wikipedia.org/wiki/Degree_of_unsaturation" target="_blank">degree of unsaturation</a>.</p>
+<p>For stable molecules the unsaturation degree is expected to be greater or equal to zero.
+Moreover if it is non radical molecule the unsaturation degree is integer.</p>
+<p><img src="unsaturation.png"></p>
+<p>Please note that those filters apply on the molecular formula without the ionization.</p>
 
                         
                     </section>
