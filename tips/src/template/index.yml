@@ -1,0 +1,6 @@
+description: View, upload and peak picking IR spectra
+tips:
+  - minRev: 99
+    index: 1
+    title: Upload IR spectra
+    name: upload
