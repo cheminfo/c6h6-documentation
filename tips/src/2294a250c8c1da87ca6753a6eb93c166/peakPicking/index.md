@@ -6,4 +6,4 @@ Zooming in the spectrum will progressively add more and more detailed peaks.
 
 If you are searching the molecular formula of an unknown products you should click on the label corresponding to the monoisotopic experimental mass.
 
-<img src="ionization.png">
+<img src="peakPicking.gif">
