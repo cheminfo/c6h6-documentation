@@ -18,7 +18,7 @@ for (let dir of dirs) {
   if (fs.existsSync(file)) {
     let yaml = fs.readFileSync(file, 'utf8');
     let toc = YAML.parse(yaml);
-    summary.push(`## ${toc.description}\n`);
+    summary.push(`## ${toc.description} [](${dir}/index.yml)\n`);
     let tips = toc.tips.sort((a, b) => a.index - b.index);
     for (let tip of tips) {
       if (!tip.index || !tip.title || !tip.name) {
