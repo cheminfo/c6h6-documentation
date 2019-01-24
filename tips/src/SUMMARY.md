@@ -19,6 +19,10 @@
 3. [Select a monoisotopic mass](2294a250c8c1da87ca6753a6eb93c166/peakPicking/index.md)
 4. [Understanding the result table](2294a250c8c1da87ca6753a6eb93c166/results/index.md)
 
+## View and assign NMR spectra [](4c986ed7d921b11fbe6f20240f0df3a8/index.yml)
+
+1. [View any acquisition parameters](4c986ed7d921b11fbe6f20240f0df3a8/viewParameter/index.md)
+
 ## View, upload and peak picking IR spectra [](a7448bb6798371144f9a5ecab184e100/index.yml)
 
 1. [Upload IR spectra](a7448bb6798371144f9a5ecab184e100/upload/index.md)
