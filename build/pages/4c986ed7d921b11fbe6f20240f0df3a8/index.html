@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ionization/" />
+    <link rel="next" href="viewParameter/" />
     
     
 
@@ -81,7 +81,7 @@
 
     
         
-            <li class="header">View, upload and process high resolution mass spectra</li>
+            <li class="header">View and assign NMR spectra</li>
         
         
     
@@ -105,51 +105,12 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="ionization/">
+        <li class="chapter " data-level="2.1" data-path="viewParameter/">
             
-                <a href="ionization/">
-            
-                    
-                    Ionizations
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" data-path="unsaturation/">
-            
-                <a href="unsaturation/">
+                <a href="viewParameter/">
             
                     
-                    Filter by unsaturation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.3" data-path="peakPicking/">
-            
-                <a href="peakPicking/">
-            
-                    
-                    Select a monoisotopic mass
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.4" data-path="results/">
-            
-                <a href="results/">
-            
-                    
-                    Understanding the result table
+                    View any acquisition parameters
             
                 </a>
             
@@ -191,7 +152,12 @@
                             
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="peak-picking-and-assignment">Peak picking and assignment</h1>
+<p><img src="images/peakPicking.png" alt="mages/peakPicking.png"></p>
+<p>As you open the tab the table will be filled with the Spectra available for the selected sample. Select one line to plot the corresponding NMR spectrum. We recommend you start from our Auto peak-picking. You will see the detected Ranges and their integrals just to the right of the spectrum. Select a range to see a list of the associated Signals with their multiplicities and coupling constants. Adjust the table values according to your own criterion. Use the J edition table to modify the multiplicity and coupling constants. A publication-ready report of your peak picking is automatically generated below the Spectra table. Don&#x2019;t forget to Save your changes.</p>
+<p>Integration is automatically computed upon defining the corresponding range and cannot be edited manually. You may edit the Pub int column on the Ranges table to fine-tune the integral values in the report.</p>
+<p>To assign a peak select a range in the Ranges table and then select the nuclei to be assigned in the Structure. An icon appears in the last column of the Ranges table showing that the peak has been assigned; click that icon to remove the assignment. Assigned nuclei are highlighted whenever the corresponding peak is selected in the NMR spectrum.</p>
+
                                 
                                 </section>
                             
@@ -203,7 +169,7 @@
             
                 
                 
-                <a href="ionization/" class="navigation navigation-next navigation-unique" aria-label="Next page: Ionizations">
+                <a href="viewParameter/" class="navigation navigation-next navigation-unique" aria-label="Next page: View any acquisition parameters">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -214,7 +180,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Ionizations","level":"2.1","depth":1,"path":"ionization/index.md","ref":"ionization/index.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-01-25T10:28:42.640Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-25T10:37:23.106Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"View any acquisition parameters","level":"2.1","depth":1,"path":"viewParameter/index.md","ref":"viewParameter/index.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-01-25T17:17:36.805Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-25T17:20:21.166Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

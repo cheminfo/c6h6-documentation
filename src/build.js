@@ -12,9 +12,6 @@ const GITBOOK = join(__dirname, '../node_modules/gitbook-cli/bin/gitbook.js');
 build();
 
 async function build() {
-  await exec(
-    `cd "${__dirname}" && node ${GITBOOK} build -- book ../build/book`
-  ).catch((e) => console.log(e));
 
   await exec(
     `cd "${__dirname}" && node ${GITBOOK} build -- pages ../build/pages`

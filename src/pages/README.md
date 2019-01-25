@@ -1,1 +1,1 @@
-# www.c6h6.org
+## All the documentation related to views
