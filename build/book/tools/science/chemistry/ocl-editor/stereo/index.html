@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Stereochemistry · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../atom-properties/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+                    <section class="normal markdown-section">
+                        
+                        <h2 id="stereochemistry-and-openchemlib-editor">Stereochemistry and openchemlib editor</h2>
+<p>Stereochemistry in organic chemistry is a complex problem. You may have axial chirality, racemic compounds, mixture of diastereoisomers, etc.</p>
+<p>The openchemlib editor supports the enhanced stereo recognition (ESR) introduced by Molecular Design Ltd. with IsisDraw V2.5. The ESR Tools allow to define for every stereo center, whether it is an absolute one or if it belongs to a group of stereo centers that have the drawn, but relative configuration. For any group of relative stereo centers one may define that the drawn and the inverse configurations are present, i.e. that we have a racemic situation concerning the group members. This is indicated by green stereo bonds and an ampersand &apos;&amp;&apos; at the stereo centers. Likewise one may define groups of relative stereo centers that contain either the drawn configuration or the opposite one. Stereo centers of such a group are indicated by blue stereo bonds and the word &apos;or&apos; at the stereo centers. In addition to the &apos;&amp;&apos; or &apos;or&apos; indicators group numbers show which stereo centers belong to the same group.</p>
+<h3 id="one-chiral-center-2-chlorotobutane">One chiral center: 2-chlorotobutane</h3>
+<p>Openchemlib editor will enforce chirality. If there is too much or not enough information about stereochemistry it will be represented by pink bonds.</p>
+<p><img src="chlorobutane-unspecified.png" alt="chlorobutane-unspecified.png"></p>
+<p>Even with this simple molecule we have 3 possibilities:</p>
+<ul>
+<li>there is only one enantiomer and we know which one</li>
+<li>we have a mixture of both enantiomers (&amp;)</li>
+<li>there is only one enantiomer but we don&apos;t know which one (or)</li>
+</ul>
+<p>To differentiate between those 3 possibilities, 3 enhanced stereo recognition bonds are available</p>
+<p><img src="esr.png" alt="esr.png"></p>
+<p><img src="chlorobutane-absolute.png" alt="chlorobutane-absolute.png"></p>
+<p><img src="chlorobutane-one.png" alt="chlorobutane-one.png"></p>
+<p><img src="chlorobutane-both.png" alt="chlorobutane-both.png"></p>
+<p>As an alternative you can also specify that the configuration of the chiral center is unknown using <img src="unknownConfigurationTool.gif" alt="unknownConfigurationTool.gif"></p>
+<p><img src="chlorobutane-unknown.png" alt="chlorobutane-both.png"></p>
+<h3 id="two-chiral-centers-23-bromochlorobutane">Two chiral centers: 2,3-bromochlorobutane</h3>
+<p>Each chiral center can be addressed separately and many possibilites exist. Couple of examples:</p>
+<ul>
+<li>*2 chiral centers but the relation between the 2 centers is fixed and you obtain a pair of enantiomers (racemate):</li>
+</ul>
+<p><img src="bromochlorobutane-racemate.png" alt="bromochlorobutane-racemate.png"></p>
+<ul>
+<li>only one enantiomer with known relationship between the 2 chiral centers:</li>
+</ul>
+<p><img src="bromochlorobutane-enantiomer.png" alt="bromochlorobutane-enantiomer.png"></p>
+<ul>
+<li>absolute configuration of one of the chiral center and one of the 2 possible diastereoisomers:</li>
+</ul>
+<p><img src="bromochlorobutane-onestereo.png" alt="bromochlorobutane-onestereo.png"></p>
+<ul>
+<li>absolute configuration of one of the chiral center and both possible diastereoisomers:</li>
+</ul>
+<p><img src="bromochlorobutane-epimer.png" alt="bromochlorobutane-epimerpng"></p>
+<h3 id="axial-chirality">Axial chirality</h3>
+<p>Openchemlib editor is able to deal with axial chirality like in the case of allenic or binap systems.</p>
+<p><img src="axial-unknown.png" alt="axial-unknown.png"></p>
+<p><img src="allene-unknown.png" alt="allene-unknown.png"></p>
+<p><img src="allene-absolute.png" alt="allene-absolute.png"></p>
+<p><img src="binpaphthol.png" alt="binpaphthol.png"></p>
+
+                        
+                    </section>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+</div>
+
+        
+    <script src="../../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

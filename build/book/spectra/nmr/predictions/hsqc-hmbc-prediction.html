@@ -1,0 +1,131 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HSQC / HMBC prediction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Predict 2D HSQC and HMBC NMR spectra">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../mass/mass-fragmentation.html" />
+    
+    
+    <link rel="prev" href="cosy-prediction.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="hsqc--hmbc-prediction">HSQC / HMBC prediction</h1>
+<p>Draw a chemical structure to predict and click Calculate to calculate and display its HMBC spectrum. Originally the structure of the currently selected sample will be already drawn so that you may go ahead and simulate its spectrum right away.</p>
+<p>The simulated HMBC and the 1H projection are shown to the right, while the upper-mid module displays the chemical structure with hydrogen exploded. These two modules are linked, so that hovering over a peak in the spectrum will highlight the corresponding corresponding atoms in the structure and hovering over an atom will highlight the corresponding peaks in the spectrum.</p>
+<p>You may also Paste or drop a molfile or SMILES to simulate a spectrum from local data and Drop or paste a JCamp to superimpose an experimental spectrum over the prediction.</p>
+<p>Structure drawing is powered by <a href="http://peter-ertl.com/jsme/" target="_blank">JSME</a>. 1H chemical shifts and coupling constants are predicted using <a href="http://www2.chemie.uni-erlangen.de/services/spinus/" target="_blank">Spinus</a>. Simulation from predicted parameters uses the method described in <a href="http://www.sciencedirect.com/science/article/pii/S1090780710004003" target="_blank">DOI:10.1016/j.jmr.2010.12.008</a>. HMBC correlations are calculated based on atom-to-atom paths in the molecule: a correlation is shown in the HMBC whenever a hydrogen is joined by a path traversing no less than Minimal number of bonds and no more than Maximal number of bonds to the carbon atom. You may adjust these Simulation parameters in the module right next to the Calculate button. A HSQC spectrum can be obtained by setting Maximal number of bonds and Minimal number of bonds to 1.  </p>
+
+                        
+                    </section>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
