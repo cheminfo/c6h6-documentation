@@ -23,7 +23,7 @@
 
 - [Mass fragmentation](spectra/mass/mass-fragmentation.md)
 - [Peptide and nucleotide fragmentation](spectra/mass/peptide-and-nucleotide-fragmentation.md)
-- [MF from monoisotopic mass](spectra/mass/mf-from-monoisotopic-mass.md)
+- [MF from monoisotopic mass](s2294a250c8c1da87ca6753a6eb93c166)
 - [Structure and MF information](spectra/mass/structure-and-mf-information.md)
 
 ## Chromatography

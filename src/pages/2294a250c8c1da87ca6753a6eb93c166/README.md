@@ -14,8 +14,7 @@ This tool will consider the mass of the electron and the number of charge of the
   <thead>
     <tr>
       <th style="text-align:left">
-        <img src="https://lh6.googleusercontent.com/YocYTv4Lty_7q8OQfUrklLp8fxDvjS3wlqhNDT-goA5yE0TF5Nz7u-cpZFbmafy1ibQUIp5aFLa0YDK9AabuMznBLsKSbS0W0CfLS9-9z3oIZgRqidvEQIxciX9m6lh0B2KQkGmb"
-        alt/>
+        <img src="images/preferences.png"/>
       </th>
       <th style="text-align:left">
         <ul>
@@ -67,14 +66,12 @@ Using the button ‘Pubchem candidates’ you are able to list all the possible 
 
 Couple of points to note:
 
-* PubChem does not provide the isotope information in the molecular formula
-* PubChem does not provide the different parts of the molecule in the molecular formula
-* PubChem is not consistent with the monoisotopic mass they list on their website
+- PubChem does not provide the isotope information in the molecular formula
+- PubChem does not provide the different parts of the molecule in the molecular formula
+- PubChem is not consistent with the monoisotopic mass they list on their website
 
 Therefore we have recalculate the molecular formula, monoisotopic mass, charge and molecular weight from the provided molfile. This allows us to have very accurate monoisotopic mass that also deals with isotopes.
 
 Please note that for the calculation of the monoisotopic mass we didn’t consider the charge !
 
-NB: only stable isotopes are considered !  
-
-
+NB: only stable isotopes are considered !
