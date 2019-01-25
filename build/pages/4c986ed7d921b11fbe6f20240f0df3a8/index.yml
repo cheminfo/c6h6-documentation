@@ -1,0 +1,6 @@
+description: View and assign NMR spectra
+tips:
+  - minRev: 987
+    index: 1
+    title: View any acquisition parameters
+    name: viewParameter

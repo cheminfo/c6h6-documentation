@@ -8,16 +8,19 @@ const { join } = require('path');
 
 const exec = require('child-process-promise').exec;
 
-const GITBOOK = join(__dirname, '../node_modules/gitbook-cli/bin/gitbook.js ');
-
+const GITBOOK = join(__dirname, '../node_modules/gitbook-cli/bin/gitbook.js');
 build();
 
 async function build() {
-  await exec(`node ${GITBOOK} build -- pages ../build/tips`);
+  await exec(
+    `cd "${__dirname}" && node ${GITBOOK} build -- book ../build/book`
+  ).catch((e) => console.log(e));
+
+  await exec(
+    `cd "${__dirname}" && node ${GITBOOK} build -- pages ../build/pages`
+  );
   //  var stdout = result.stdout;
   //  var stderr = result.stderr;
-
-  await exec(`node ${GITBOOK} build -- book ../build/book`);
 
   const homedir = join(__dirname, 'pages');
   const sourceLayouts = join(homedir, 'template', '_layouts');
@@ -33,7 +36,7 @@ async function build() {
       fs.mkdirSync(layouts);
       fsExtra.copySync(sourceLayouts, layouts);
       await exec(
-        `cd tips; node ${GITBOOK} build -- ${dir} ../../build/pages/${dir}`
+        `cd "${__dirname}/pages" && node ${GITBOOK} build -- ${dir} ../../build/pages/${dir}`
       );
       fsExtra.removeSync(layouts);
     }

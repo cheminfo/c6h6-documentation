@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-docs; npm run build-tips",
-    "build-docs": "npx gitbook-cli build -- book docs",
-    "build-tips": "node tips/buildSummary.js && node tips/build.js"
+    "build": "node src/buildSummary.js && node src/build.js"
   },
   "repository": {
     "type": "git",

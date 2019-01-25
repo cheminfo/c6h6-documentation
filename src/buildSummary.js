@@ -5,7 +5,7 @@ const join = require('path').join;
 
 const YAML = require('yaml');
 
-const homedir = join(__dirname, 'tips');
+const homedir = join(__dirname, 'pages');
 
 let dirs = fs.readdirSync(homedir).filter((item) => item.length === 32);
 
