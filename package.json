@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node src/buildSummary.js && node src/build.js",
-    "build-book": "node src/buildBook.js"
+    "build": "node bin/build.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
   "homepage": "https://github.com/cheminfo/c6h6-documentation#readme",
   "dependencies": {
     "child-process-promise": "^2.2.1",
+    "find": "^0.2.9",
     "fs-extra": "^7.0.1",
+    "fs-find": "^0.4.0",
     "gitbook": "^3.2.3",
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
