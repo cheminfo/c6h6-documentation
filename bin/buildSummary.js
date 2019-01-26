@@ -34,10 +34,10 @@ function buildSummary(homedir) {
           }
           summary.push(`* [${tip.title}](${dir}/${tip.name}/index.md)`);
           localSummary.push(`* [${tip.title}](${tip.name}/index.md)`);
-          let localSummaryFile = join(homedir, dir, 'SUMMARY.md');
-          fs.writeFileSync(localSummaryFile, localSummary.join('\n'));
         }
       }
+      let localSummaryFile = join(homedir, dir, 'SUMMARY.md');
+      fs.writeFileSync(localSummaryFile, localSummary.join('\n'));
 
       summary.push('');
     }
