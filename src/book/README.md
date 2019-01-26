@@ -1,4 +1,4 @@
-# www.c6h6.org
+# www.c6h6.org - general documentation
 
 Check our youtube video:
 
