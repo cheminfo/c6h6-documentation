@@ -23,22 +23,16 @@ function buildSummary(homedir) {
       localSummary.push('## TIPS\n');
       let tips = toc.tips.sort((a, b) => a.index - b.index);
       for (let tip of tips) {
-        if (!tip.index || !tip.title || !tip.name) {
-          console.log(
-            'tip.index, tip.title and tip.name are mandatory',
-            dir,
-            tip
-          );
+        if (!tip.title || !tip.name) {
+          console.log('tip.title and tip.name are mandatory', dir, tip);
           continue;
         }
         let linkFile = join(homedir, dir, tip.name, 'index.md');
         if (!fs.existsSync(linkFile)) {
           console.log('The file does not exist: ', linkFile);
         }
-        summary.push(
-          `${tip.index}. [${tip.title}](${dir}/${tip.name}/index.md)`
-        );
-        localSummary.push(`${tip.index}. [${tip.title}](${tip.name}/index.md)`);
+        summary.push(`* [${tip.title}](${dir}/${tip.name}/index.md)`);
+        localSummary.push(`* [${tip.title}](${tip.name}/index.md)`);
         let localSummaryFile = join(homedir, dir, 'SUMMARY.md');
         fs.writeFileSync(localSummaryFile, localSummary.join('\n'));
       }
