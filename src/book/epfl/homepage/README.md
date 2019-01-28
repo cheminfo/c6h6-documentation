@@ -1,4 +1,4 @@
-# EPFL private tools
+# eln.epfl.ch Homepage
 
 You may think of eln.epfl.ch as either an electronic laboratory notebook \(ELN\) or as a repository for your spectroscopic data \(NMR, IR; MS\) with some helpful tools \(e.g. peak-picking, simulation\).
 
