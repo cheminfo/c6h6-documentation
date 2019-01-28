@@ -18,6 +18,5 @@ async function build() {
   copyPagesToTemp(sourceDir, pagesTmpDir);
   buildSummary(pagesTmpDir);
   await buildPagesAndTips(pagesTmpDir, targetDir, layoutDir);
-
-  buildBooks(sourceDir, join(targetDir, 'book'));
+  await buildBooks(sourceDir, join(targetDir, 'book'));
 }

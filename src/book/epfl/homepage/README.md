@@ -1,28 +1,26 @@
 # EPFL private tools
 
-
-
 You may think of eln.epfl.ch as either an electronic laboratory notebook \(ELN\) or as a repository for your spectroscopic data \(NMR, IR; MS\) with some helpful tools \(e.g. peak-picking, simulation\).
 
 ## Check our youtube video:
 
-* General introduction about the website: [https://youtu.be/SHN07asZaGc](https://www.youtube.com/embed/SHN07asZaGc)
-* Adding new products: [https://youtu.be/4UBwnFCBlvU](https://www.youtube.com/embed/4UBwnFCBlvU)
+- General introduction about the website: [https://youtu.be/SHN07asZaGc](https://www.youtube.com/embed/SHN07asZaGc)
+- Adding new products: [https://youtu.be/4UBwnFCBlvU](https://www.youtube.com/embed/4UBwnFCBlvU)
 
 ## Quick tip : How to generate a sample submission form
 
 ### Add a sample
 
-* Click on “Add a sample”
-* Enter the name of the sample \(and the batch if needed\)
-* In the sample page, you can either draw the structure of your compound, or click right on the drawing box and Copy a structure as a MOL \(drag and drop a .mol file from your computer\) or smiles or sdf file.
-* Save and go back to home page
+- Click on “Add a sample”
+- Enter the name of the sample \(and the batch if needed\)
+- In the sample page, you can either draw the structure of your compound, or click right on the drawing box and Copy a structure as a MOL \(drag and drop a .mol file from your computer\) or smiles or sdf file.
+- Save and go back to home page
 
-### Generate a sample submisson form
+### Generate a sample submission form
 
-* Select the sample
-* Click on “Mass requests” or “Xray requests”
-* Fill the form and click on ‘Create and print request’
+- Select the sample
+- Click on “Mass requests” or “Xray requests”
+- Fill the form and click on ‘Create and print request’
 
 ## More detailed information about eln.epfl.ch
 
@@ -36,13 +34,13 @@ Fill in the form and click Submit. A new line is created in the List of selected
 
 To the left you will find the List of selected samples. The following information is available:
 
-* Product reference: the sample’s unique identifier
-* Last modif.: Last modification date
-* Structure: Chemical structure associated with the sample
-* nb 1d: Number of 1D NMR spectra stored for the sample
-* nb 2d: Number of 2D NMR spectra
-* nb ms: Number of mass spectra
-* nb IR: Number of infrared spectra
+- Product reference: the sample’s unique identifier
+- Last modif.: Last modification date
+- Structure: Chemical structure associated with the sample
+- nb 1d: Number of 1D NMR spectra stored for the sample
+- nb 2d: Number of 2D NMR spectra
+- nb ms: Number of mass spectra
+- nb IR: Number of infrared spectra
 
 Switch the group\* filter to either browse all samples you have access to \(including public samples\) or just your own \(mine\). Scroll down the List of selected samples and select the sample you want, or locate it with the Search for samples tool just above the list. There is also a Structure search tool where you can search samples by substructure or structure similarity.
 
@@ -60,7 +58,4 @@ Open/Edit sample: Input, upload, and edit the selected sample’s data.
 
 Overlay NMR: Superimpose up to three NMR spectra from your database or from a local file. This tool is available with no sample selected.
 
-NMR predict: Predict and simulate 1H, 13C, COSY and HMBC spectra using state-of-the-art algorithms. You may also overlay the experimental spectrum with the prediction \(1D only\).  
-
-
-* 
+NMR predict: Predict and simulate 1H, 13C, COSY and HMBC spectra using state-of-the-art algorithms. You may also overlay the experimental spectrum with the prediction \(1D only\).
