@@ -42,7 +42,7 @@
 
 ## ELN
 
-- [Add a reaction](eln/add-a-reaction.md)
+- [Add a reaction](eln/add-a-reaction/README.md)
 
 ## Image processing
 
