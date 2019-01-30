@@ -2,14 +2,14 @@ description: View and assign NMR spectra
 uuid: 13a5028017f3fdcd3d5c0ce32120e876
 tips:
   - minRev: 765
-    title: Calculate solvent volume to reach concentration
-    name: solventConcentration
+    title: Lookup for products
+    name: productLookup
   - minRev: 765
     title: Specify purity
     name: purity
   - minRev: 765
+    title: Calculate solvent volume to reach concentration
+    name: solventConcentration
+  - minRev: 765
     title: Mixture of solvent volume to reach concentration
     name: mixtureSolvent
-  - minRev: 765
-    title: Lookup for products
-    name: productLookup
