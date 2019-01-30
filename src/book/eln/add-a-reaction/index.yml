@@ -8,5 +8,8 @@ tips:
     title: Specify purity
     name: purity
   - minRev: 765
-    title: Specify purity
+    title: Mixture of solvent volume to reach concentration
     name: mixtureSolvent
+  - minRev: 765
+    title: Lookup for products
+    name: productLookup
