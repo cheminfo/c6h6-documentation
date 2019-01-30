@@ -7,7 +7,7 @@ In this column you may either enter:
 - cas number
 - product name
 - molecular formula
-- product code (practical to retrieve a product you synthesized before)
+- **product code** (practical to retrieve a product you synthesized before)
 
 A molecular formula may be entered the way a chemist think about it. Meaning you are allowed to use groups and parenthesis like `(MeCH)2NH`.
 
