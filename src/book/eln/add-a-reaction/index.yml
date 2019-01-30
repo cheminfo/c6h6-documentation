@@ -7,3 +7,6 @@ tips:
   - minRev: 765
     title: Specify purity
     name: purity
+  - minRev: 765
+    title: Specify purity
+    name: mixtureSolvent
