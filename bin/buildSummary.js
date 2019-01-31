@@ -31,6 +31,7 @@ function buildSummary(homedir) {
           let linkFile = join(homedir, dir, tip.name, 'index.md');
           if (!fs.existsSync(linkFile)) {
             console.log('The file does not exist: ', linkFile);
+            continue;
           }
           summary.push(`* [${tip.title}](${dir}/${tip.name}/index.md)`);
           localSummary.push(`* [${tip.title}](${tip.name}/index.md)`);
