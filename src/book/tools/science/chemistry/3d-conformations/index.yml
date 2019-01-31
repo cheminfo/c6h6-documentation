@@ -1,0 +1,6 @@
+description: Generate 3D conformations
+uuid: 0e019bb4d797395213d22aca4043260e
+tips:
+  - minRev: 56
+    title: Copy molfile
+    name: copyMolfile
