@@ -1,3 +1,6 @@
 description: 3D model generation
 uuid: 0e019bb4d797395213d22aca403d2c93
 tips:
+  - minRev: 127
+    title: Copy molfile
+    name: copyMolfile
