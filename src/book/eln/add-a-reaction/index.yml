@@ -1,4 +1,4 @@
-description: View and assign NMR spectra
+description: Add and modify a reaction
 uuid: 13a5028017f3fdcd3d5c0ce32120e876
 tips:
   - minRev: 765
@@ -13,3 +13,6 @@ tips:
   - minRev: 765
     title: Mixture of solvent volume to reach concentration
     name: mixtureSolvent
+  - minRev: 808
+    title: Purity of reagents in mM
+    name: puritymM
