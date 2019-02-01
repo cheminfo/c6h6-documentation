@@ -19,3 +19,6 @@ tips:
   - minRev: 810
     title: 'Molecular formula: salt'
     name: mfSalt
+  - minRev: 835
+    title: 'Expand one letter code'
+    name: explodeSequences
