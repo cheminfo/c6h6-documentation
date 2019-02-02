@@ -1,5 +1,7 @@
 'use strict';
 
+const { mkdirpSync } = require('fs-extra');
+
 const { join } = require('path');
 
 const copyPagesToTemp = require('./copyPagesToTemp');
@@ -15,6 +17,7 @@ let layoutDir = join(__dirname, '../src/layouts');
 build();
 
 async function build() {
+  mkdirpSync(targetDir);
   copyPagesToTemp(sourceDir, pagesTmpDir);
   buildSummary(pagesTmpDir);
   await buildPagesAndTips(pagesTmpDir, targetDir, layoutDir);
