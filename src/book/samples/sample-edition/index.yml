@@ -22,3 +22,6 @@ tips:
   - minRev: 835
     title: 'Expand one letter code'
     name: explodeSequences
+  - minRev: 849
+    title: 'Print report'
+    name: printReport
