@@ -1,4 +1,4 @@
-## Search by NMR chemical shifts
+# Search by NMR chemical shifts
 
 This tool is designed to search by NMR chemical shifts that may be practical to find similar pure products or identify products in complex mixture like in the case of metabolomics. In order to select the chemical shifts you may either enter directly the values in the table `Ranges to search` or ALT + CLICK directly on the spectrum.
 
@@ -6,7 +6,7 @@ This tool is designed to search by NMR chemical shifts that may be practical to 
 
 You may at any time either delete one of the lines by clicking on the trash icon in front of the row or you may delete all the chemical shifts by clicking on the trash in the top right of the table. You may as well specify the multiplicity. The score will receive some bonus if the multiplicity match (and can therefore have a score over one).
 
-### Adding an experimental spectrum
+## Adding an experimental spectrum
 
 Experimental spectrum can be added either by click on `Load demo`, by drag & drop a Jcamp file or by clicking on an existing spectrum from the database. Those spectra will be filtered based on the `Exclusion zones`.
 
@@ -16,7 +16,7 @@ The exclusion zones will be indicated on the spectrum by a red line.
 
 <img src="image5.png">
 
-### Specify the allowed error and display the result
+## Specify the allowed error and display the result
 
 While searching for similar spectra the program will allowed an error on the chemical shift. This error is specified in:
 
@@ -36,7 +36,7 @@ Mouse over the annotations will highlight the corresponding molecule. If you cli
 
 <img src="image4.png">
 
-### Interactive results ...
+## Interactive results ...
 
 Mouse over in the list of reference products will highlight the region where peaks are expected
 
@@ -44,7 +44,7 @@ Mouse over in the list of reference products will highlight the region where pea
 
 This allows to quickly browse through the list of the reference spectra. If one of the reference looks promising, just click on it to display the reference corresponding NMR spectrum.
 
-### Quick search
+## Quick search
 
 You may enter complex query in order to search for reference products. This includes research on molecular formula, chemical shift and reference.
 
@@ -58,7 +58,7 @@ delta:2..2.1 delta:3..3.4 mf:C10
 
 <img src="image6.png">
 
-### The spectra displayer
+## The spectra displayer
 
 <img src="image1.png">
 
