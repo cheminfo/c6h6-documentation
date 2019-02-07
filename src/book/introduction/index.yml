@@ -1,3 +1,9 @@
 description: Home page
 uuid: 158ef2f0cc85bfc5b4f2d88cff473e83
 tips:
+  - minRev: 439
+    title: 3D model
+    name: 3dmodel
+  - minRev: 439
+    title: Search in sample list
+    name: search
