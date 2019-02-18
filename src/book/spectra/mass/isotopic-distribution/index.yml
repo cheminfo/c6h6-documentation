@@ -1,0 +1,6 @@
+description: Calculate isotopic distribution from structure or MF
+uuid: daf2eda5bf803818ce48655dd963ca21
+tips:
+  - minRev: 208
+    title: List allowed groups
+    name: mfGroups
