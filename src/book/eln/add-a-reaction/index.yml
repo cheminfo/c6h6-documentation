@@ -16,3 +16,6 @@ tips:
   - minRev: 808
     title: Purity of reagents in mM
     name: puritymM
+  - minRev: 827
+    title: Direct link for analysis
+    name: checkAnalysis
