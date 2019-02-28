@@ -13,3 +13,6 @@ tips:
   - minRev: 267
     title: Understanding the result table
     name: results
+  - minRev: 404
+    title: Relative mass
+    name: relative
