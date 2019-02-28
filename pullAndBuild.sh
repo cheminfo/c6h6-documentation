@@ -1,3 +1,5 @@
 #!/bin/bash
 
-git pull --recurse-submodules | grep -q -v 'Already up-to-date.' && npm ci && npm run build
+/usr/bin/git submodule update --init --recursive --remote
+
+/usr/bin/git pull | grep -q -v 'Already up-to-date.' && /usr/bin/npm ci && /usr/bin/npm run build
