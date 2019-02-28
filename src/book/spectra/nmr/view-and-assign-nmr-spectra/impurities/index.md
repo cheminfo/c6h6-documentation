@@ -1,4 +1,4 @@
-## Define ranges as impurities, reference, etc.
+## Relative mass
 
 In the range table it is possble to define if a range is:
 
