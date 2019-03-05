@@ -19,3 +19,6 @@ tips:
   - minRev: 827
     title: Direct link for analysis
     name: checkAnalysis
+  - minRev: 850
+    title: Add text from shortcuts
+    name: shortcuts
