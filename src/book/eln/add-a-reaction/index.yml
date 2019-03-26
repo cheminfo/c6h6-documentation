@@ -22,3 +22,6 @@ tips:
   - minRev: 850
     title: Add text from shortcuts
     name: shortcuts
+  - minRev: 870
+    title: Products theoretical information
+    name: productsInfo
