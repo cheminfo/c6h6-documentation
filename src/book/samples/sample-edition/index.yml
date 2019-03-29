@@ -25,3 +25,6 @@ tips:
   - minRev: 849
     title: 'Print report'
     name: printReport
+  - minRev: 880
+    title: 'Access rights'
+    name: protection
