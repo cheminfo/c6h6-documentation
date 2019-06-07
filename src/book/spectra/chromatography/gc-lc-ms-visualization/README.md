@@ -1,10 +1,14 @@
 # GC / LC - MS visualization
 
+This application allows to visualize and integrate GC / LC with or with MS.
+
 ## Loading files
 
-This view came with and preloaded test case so you may just click on it and start to analyse the data.
+Files can be uploaded either as a JCAMP, NetCDF or mzData formats. The files can be drag and dropped or selected clicking in the same drop module. The files are listed in the list below the drop zone and you should click on one of them in order to visualize the chromatogram.
 
-It is also designed to work with any file with the JCAMP, NetCDF, or mzData formats. This files can be drag and dropped or selected clicking in the same drop module. This files are going to be displayed in the list below, specifying the name of the file.
+## MF and ionization
+
+You can specify the molecular formula
 
 ### Chromatogram visualization
 
