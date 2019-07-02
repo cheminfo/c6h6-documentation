@@ -28,3 +28,6 @@ tips:
   - minRev: 880
     title: 'Access rights'
     name: protection
+  - minRev: 880
+    title: 'Metal complexes'
+    name: metal
