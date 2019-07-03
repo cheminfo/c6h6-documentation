@@ -2,8 +2,8 @@
 
 It is possible to vertical scale 2D spectra with the scroll wheel.
 
-By default positive and negative spectra are scaled separately.
+By default positive and negative spectra are scaled simultaneously when the scroll wheel is scrolled.
 
-If you want to scale the positive part of the spectrum you may scroll the wheel.
+If you want to scale the negative part independently from the positive part you should scroll the wheel while maintining SHIFT pressed..
 
-In order to scroll the negative part, press SHIFT and then scroll the wheel.
+<img src='scale.gif'>

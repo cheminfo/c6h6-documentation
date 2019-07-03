@@ -7,6 +7,6 @@ tips:
   - minRev: 998
     title: Define impurities, reference, solvant
     name: impurities
-  - minRev: 1027
+  - minRev: 1040
     title: Vertical scale of 2D NMR
     name: scale2D
