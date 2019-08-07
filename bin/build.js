@@ -17,9 +17,13 @@ let layoutDir = join(__dirname, '../src/layouts');
 build();
 
 async function build() {
-  mkdirpSync(targetDir);
+    mkdirpSync(targetDir);
+    console.log('copy pages to temp');
   copyPagesToTemp(sourceDir, pagesTmpDir);
+    console.log('build summary');
   buildSummary(pagesTmpDir);
+    console.log('build pages and tips');
   await buildPagesAndTips(pagesTmpDir, targetDir, layoutDir);
+    console.log('build books');
   await buildBooks(sourceDir, join(targetDir, 'book'));
 }

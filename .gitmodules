@@ -1,0 +1,12 @@
+[submodule "src/book/gy"]
+	path = src/book/gy
+	url = git@github.com:zakodium/gy-documentation.git
+[submodule "src/book/7IAwDVDI3o"]
+	path = src/book/7IAwDVDI3o
+	url = git@github.com:zakodium/gy-documentation.git
+[submodule "src/book/epfl"]
+	path = src/book/epfl
+	url = ssh://git@c4science.ch/source/eln-documentation.git
+[submodule "src/book/42wGUW3teYrRxBfi"]
+	path = src/book/42wGUW3teYrRxBfi
+	url = ssh://git@make.octanis.ch:2222/swissdecode/visualization-docs.git

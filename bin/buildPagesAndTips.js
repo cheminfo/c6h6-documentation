@@ -37,7 +37,10 @@ async function buildPagesAndTips(sourceDir, targetDir, layoutDir) {
           pagesDir,
           dir
         )}`
-      );
+      ).catch( (e) => {
+          console.log('Build excpeption: ',e);
+          console.log(e.stdout);
+      });
     }
   }
 }
