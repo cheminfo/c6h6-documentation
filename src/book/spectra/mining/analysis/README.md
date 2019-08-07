@@ -144,7 +144,7 @@ for (let result of results) {
 return report;
 ```
 
-## Design a report
+## Design a report (Twig template)
 
 The last tab, `Design report`, allows to create advanced reports for the analysis.
 
