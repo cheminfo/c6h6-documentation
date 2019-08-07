@@ -224,8 +224,7 @@ Example:
     <tr>
       <td>{{ result.spectrum.toc.reference }}</td>
       <td>
-        {{ result.spectrum.jcamp.filename|replace({"spectra/ir/": "", ".jdx":"",
-        ".JDX":""}) }}
+        {{ result.spectrum.jcamp.filename|replace({"spectra/": "", ".jdx":"", ".JDX":""}) }}
       </td>
       <td>
         {% if result.maxAlcohol<10 %}
