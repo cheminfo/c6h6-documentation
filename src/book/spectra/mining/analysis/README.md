@@ -73,7 +73,9 @@ To define a zoon press the `ALT` key and then click once on the left, once on th
 
 <img src="images/edit-ranges.gif">
 
-## Define a formula
+## Create a function to apply on each spectrum
+
+To create the function click on `Results calculation`.
 
 To define a formula you need to write a javascript code that will return an object.
 
@@ -110,9 +112,41 @@ In order to test the script you need to click on `Generate results`. A table con
 be displayed in the bottom. Clicking on one of the result will show detailed information about all the fields
 available to create the script.
 
+## Create a function to calculate a report based on the results
+
+To create the function click on `Report calculation`.
+
+The report calculation allows to reduce the data to a global report. As variable you have the `results` that was
+calculated previously and you need to return an object containing the report.
+
+Using this function you can calculate for example:
+
+- number of outliers
+- kinetic
+- statistics
+- etc.
+
+```js
+let report = {
+  under10: 0,
+  over10: 0,
+  min: Number.MAX_VALUE,
+  max: Number.MIN_VALUE
+};
+
+for (let result of results) {
+  if (result.maxAlcohol > report.max) report.max = result.maxAlcohol;
+  if (result.maxAlcohol < report.min) report.min = result.maxAlcohol;
+  if (result.maxAlcohol < 10) report.under10++;
+  if (result.maxAlcohol >= 10) report.over10++;
+}
+
+return report;
+```
+
 ## Design a report
 
-The last tab, `Design reports`, allows to create advanced reports for the analysis.
+The last tab, `Design report`, allows to create advanced reports for the analysis.
 
 The reports are based on the
 [Twig template engine](https://twig.symfony.com/doc/2.x/)
@@ -224,7 +258,8 @@ Example:
     <tr>
       <td>{{ result.spectrum.toc.reference }}</td>
       <td>
-        {{ result.spectrum.jcamp.filename|replace({"spectra/": "", ".jdx":"", ".JDX":""}) }}
+        {{ result.spectrum.jcamp.filename|replace({"spectra/": "", ".jdx":"",
+        ".JDX":""}) }}
       </td>
       <td>
         {% if result.maxAlcohol<10 %}
