@@ -25,3 +25,6 @@ tips:
   - minRev: 870
     title: Products theoretical information
     name: productsInfo
+  - minRev: 932
+    title: Copy the product as molfile
+    name: copyProducts
