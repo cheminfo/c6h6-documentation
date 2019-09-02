@@ -1,8 +1,9 @@
 # Create analytical report from spectra
 
-Thie program allows to define and apply analatical procedure on one or more spectra. The general principle is:
+This program allows to define and apply analytical procedure on one or more spectra. The general principle is:
 
 - select spectra
+- define parameters for spectra normalization
 - define ranges that will be associated to a variable and for which the following parameters are calculated:
   - integration
   - point for min y value
@@ -34,18 +35,18 @@ From the list of selected spectra it is still possible to:
 
 <img src="images/selection.png">
 
-In order to display the spectra you need to click on `Update data and charts`. This will recalculate the spectra based on the specified preferences:
+Depending your preferences (`auto-refresh`) you will either see directly the spectra or you need to click on `Update data and chart`. This will recalculate the spectra based on the specified normalization preferences:
 
 <img src="images/preferences.png">
 
-- `Keep original data` this is extremely memory intensive and should not be used with large number of spectra. It is however practical to setup new protocols on small dataset
-- `Display original data or normalized data` displaying the normalized data allows to see exactly what will be used for further calculation. Displaying the original data is only useful during new method developement.
-- Filter
-  - specify a range to consider (by default the full spectra)
-  - reduce the number of points
-  - preprocess the data using [Standard Normal Variate (SNV)](http://wiki.eigenvector.com/index.php?title=Advanced_Preprocessing:_Sample_Normalization#SNV_.28Standard_Normal_Variate.29). This preprocessing can be achieved by selecting the 2 options `center data`and `scale data`
-- List of exclusions
-  - specify a list of ranges that should be ignore for the processing
+- `Display original data or normalized data` displaying the normalized data allows to see exactly what will be used for further calculations. Displaying the original data is only useful during new method development.
+
+### Normalization preferences
+
+- `Range`: specify a range (X axis) to consider (by default the full spectrum)
+- `Number of points`: reduce the number of points to the specified value
+- `Filters`: define a list of filters to apply on the data. For example to apply [Standard Normal Variate (SNV)](http://wiki.eigenvector.com/index.php?title=Advanced_Preprocessing:_Sample_Normalization#SNV_.28Standard_Normal_Variate.29) you need to add the 2 filters: `center mean`and `divide by SD`
+- `Exclusions`: specify a list of ranges that should be ignore for the processing
 
 ## Load existing analytical procedure
 
@@ -59,13 +60,13 @@ The following parameters are considered when loading / saving analytical procedu
 
 - preferences
 - ranges that define variables
-- code that calculates information on each spectra
+- code that calculates information from the spectra
 - twig template that generates the report
 - a free description explaining the analysis
 
 ## Create ranges
 
-In the `Calculations` tab you are able to define range in the spectrum and a variable name for each of the range as well as a description.
+In the `Check results` tab you are able to define ranges in the spectrum and a variable name for each of the range as well as a description.
 
 <img src="images/add-ranges.gif">
 
@@ -73,76 +74,94 @@ To define a zoon press the `ALT` key and then click once on the left, once on th
 
 <img src="images/edit-ranges.gif">
 
-## Create a function to apply on each spectrum
+## Create a function to apply on the spectra
 
-To create the function click on `Results calculation`.
+To create the function click on `Edit calculations` tab.
 
-To define a formula you need to write a javascript code that will return an object.
+To define a formula you need to write a javascript code that will modify the variable `data`. This variable contains 2 properties:
 
-In the code you can use `spectrum` that contains many information about each spectrum. Among the information there is an object `spectrum.ranges` that will contain for each of the defined ranges (associated to a variable) the following information:
+- spectra: all the information related to the selected spectra
+- report: an empty object that allows to store global statistics about the analysis
 
-- from
-- to
-- label (variable name)
-- description
-- integration
-- maxPoint (highest point in the range)
+At anytime you can check the content of the variable `data` using the JSON explorer.
+
+<img src="images/data-explorer.png">
+
+A basic example would be:
+
+```js
+for (let spectrum of data.spectra) {
+  // You are free to define new properties in the empty object 'results'
+  spectrum.results.ratio =
+    (spectrum.ranges.alcohol.integration -
+      spectrum.ranges.aldehyde.integration) /
+    spectrum.ranges.aromatic.integration;
+}
+```
+
+A more advanced and complete example is presented here:
 
 ```js
 // The following line allows to have a log in the browser console.
 // To display the console: `View → Developer → JavaScript Console`
-console.log(spectrum);
+// console.log(data);
 
-// You are free to define variable that may be any combination
-// of the defined range
-let ratio =
-  (spectrum.ranges.alcohol.integration - spectrum.ranges.aldehyde.integration) /
-  spectrum.ranges.aromatic.integration;
+/*
+The data object gives access to the spectra as well as the report.
+The report is a property of data that allows to store any global
+information about the spectra.
+*/
 
-// You need to return an object. All those information will be available to create the report
-return {
-  id: spectrum.id,
-  color: spectrum.color,
-  ratio,
-  maxAlcohol: spectrum.ranges.alcohol.maxPoint.y * 100
-};
-```
-
-In order to test the script you need to click on `Generate results`. A table containing all the results will
-be displayed in the bottom. Clicking on one of the result will show detailed information about all the fields
-available to create the script.
-
-## Create a function to calculate a report based on the results
-
-To create the function click on `Report calculation`.
-
-The report calculation allows to reduce the data to a global report. As variable you have the `results` that was
-calculated previously and you need to return an object containing the report.
-
-Using this function you can calculate for example:
-
-- number of outliers
-- kinetic
-- statistics
-- etc.
-
-```js
-let report = {
-  under10: 0,
-  over10: 0,
-  min: Number.MAX_VALUE,
-  max: Number.MIN_VALUE
-};
-
-for (let result of results) {
-  if (result.maxAlcohol > report.max) report.max = result.maxAlcohol;
-  if (result.maxAlcohol < report.min) report.min = result.maxAlcohol;
-  if (result.maxAlcohol < 10) report.under10++;
-  if (result.maxAlcohol >= 10) report.over10++;
+for (let spectrum of data.spectra) {
+  // You are free to define new properties in the empty object 'results'
+  spectrum.results.ratio =
+    (spectrum.ranges.alcohol.integration -
+      spectrum.ranges.aldehyde.integration) /
+    spectrum.ranges.aromatic.integration;
 }
 
-return report;
+/*
+    You can calculate some statistics for all the spectra
+*/
+data.report.minAlcohol = Number.MAX_VALUE;
+data.report.maxAlcohol = Number.MIN_VALUE;
+for (let spectrum of data.spectra) {
+  if (spectrum.ranges.alcohol.integration > data.report.maxAlcohol) {
+    data.report.maxAlcohol = spectrum.ranges.alcohol.integration;
+  }
+  if (spectrum.ranges.alcohol.integration < data.report.minAlcohol) {
+    data.report.minAlcohol = spectrum.ranges.alcohol.integration;
+  }
+}
+
+/*
+    You can even create a chart
+*/
+let points = { x: [], y: [] };
+for (let spectrum of data.spectra) {
+  points.x.push(points.x.length + 1);
+  points.y.push(spectrum.results.ratio);
+}
+
+data.report.chart = {
+  axes: {
+    x: {
+      label: 'Sample number'
+    },
+    y: {
+      label: 'Ratio'
+    }
+  },
+  series: [
+    {
+      data: points,
+      label: 'customLabel'
+    }
+  ]
+};
 ```
+
+In order to test the script you need to click on `Generate results`. You will see the new properties that you added in the JSON explorer.
 
 ## Design a report (Twig template)
 
@@ -252,29 +271,51 @@ Example:
     <tr>
       <th>Reference</th>
       <th>Filename</th>
-      <th>Integration</th>
+      <th>Raio</th>
     </tr>
-    {% for result in results %}
+    {% for spectrum in data.spectra %}
     <tr>
-      <td>{{ result.spectrum.toc.reference }}</td>
+      <td>{{ spectrum.toc.reference }}</td>
       <td>
-        {{ result.spectrum.jcamp.filename|replace({"spectra/": "", ".jdx":"",
+        {{ spectrum.jcamp.filename|replace({"spectra/ir/": "", ".jdx":"",
         ".JDX":""}) }}
       </td>
       <td>
-        {% if result.maxAlcohol<10 %}
+        {% if spectrum.results.ratio<1 %}
         <span style="color: red">
-          {{ result.maxAlcohol|number_format(2) }}
+          {{ spectrum.results.ratio|number_format(2) }}
         </span>
         {% else %}
         <span style="color: green">
-          {{ result.maxAlcohol|number_format(2) }}
+          {{ spectrum.results.ratio|number_format(2) }}
         </span>
         {% endif %}
       </td>
     </tr>
     {% endfor %}
   </table>
+
+  <h1>
+    Global report
+  </h1>
+  <table>
+    <tr>
+      <th>Over 10</th>
+      <td>{{data.report.over10}}</td>
+    </tr>
+    <tr>
+      <th>Min alcohol</th>
+      <td>{{data.report.minAlcohol|number_format(2)}}</td>
+    </tr>
+    <tr>
+      <th>Max alcohol</th>
+      <td>{{data.report.maxAlcohol|number_format(2)}}</td>
+    </tr>
+  </table>
+
+  <div style="text-align: center; width: 100%; height: 300px">
+    {{rendertypeBlock(data.report.chart,'chart')}}
+  </div>
 </div>
 ```
 
