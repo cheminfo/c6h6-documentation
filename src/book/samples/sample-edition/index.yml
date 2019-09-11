@@ -31,3 +31,6 @@ tips:
   - minRev: 880
     title: 'Metal complexes'
     name: metal
+  - minRev: 904
+    title: 'Information about MF'
+    name: mfInfo
