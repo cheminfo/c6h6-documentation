@@ -6,4 +6,4 @@ To hide an entry click on the `eye` icon in the list of entries.
 
 You can also show all the hidden entries by clicking on the `eye` in the window header. You have then the possibility to unhide entries.
 
-<img src="hidden.png">
+<img src="hidden.gif">
