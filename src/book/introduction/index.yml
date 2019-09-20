@@ -7,3 +7,6 @@ tips:
   - minRev: 439
     title: Search in sample list
     name: search
+  - minRev: 605
+    title: Hide / Show samples
+    name: hidden
