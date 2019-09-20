@@ -1,0 +1,6 @@
+description: Manage the eln
+uuid: a6fb774a50448cc3edd52dd6dfd275ea
+tips:
+  - minRev: 257
+    title: Hide / Show reactions
+    name: hidden

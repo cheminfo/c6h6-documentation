@@ -1,4 +1,4 @@
-# Add and modify a reaction
+# Add and modify an ELN entry
 
 ## Userguide
 
