@@ -19,12 +19,18 @@ tips:
   - minRev: 827
     title: Direct link for analysis
     name: checkAnalysis
-  - minRev: 850
-    title: Add text from shortcuts
-    name: shortcuts
   - minRev: 870
     title: Products theoretical information
     name: productsInfo
   - minRev: 932
     title: Copy the product as molfile
     name: copyProducts
+  - minRev: 979
+    title: Insert snippets using abbreviation
+    name: insertSnippets
+  - minRev: 979
+    title: Insert snippets from dialog
+    name: insertSnippetsDialog
+  - minRev: 979
+    title: Define snippets
+    name: defineSnippets
