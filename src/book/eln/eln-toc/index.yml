@@ -4,3 +4,6 @@ tips:
   - minRev: 257
     title: Hide / Show reactions
     name: hidden
+  - minRev: 275
+    title: Search reactions
+    name: search
