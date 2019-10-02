@@ -1,2 +1,0 @@
-## PolyCalc: polymer mass analysis
-

@@ -1,0 +1,12 @@
+description: Analyse polymers
+uuid: 230d2530cee8782b3cb63dc4e25931d9
+tips:
+  - minRev: 1
+    title: Interaction with mass spectrum
+    name: spectrumDisplayer
+  - minRev: 1
+    title: Entering a molecular formula
+    name: mf
+  - minRev: 1
+    title: Exporting results to a spreadsheet
+    name: tableExport
