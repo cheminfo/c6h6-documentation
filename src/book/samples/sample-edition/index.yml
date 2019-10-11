@@ -34,3 +34,6 @@ tips:
   - minRev: 904
     title: 'Information about MF'
     name: mfInfo
+  - minRev: 913
+    title: 'Modified sequences like PTM'
+    name: modifiedSequences
