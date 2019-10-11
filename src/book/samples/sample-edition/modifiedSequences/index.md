@@ -1,8 +1,8 @@
 ## Deal with modified peptide or nucleotide sequences
 
-Peptides, proteins and nucleotides may contain non-natural amino acid or nucleic base. They may also have chain modifications at the terminal positions. This could be the result of post-translational modification (PTM), synthesis using non natural amino acids, etc.
+Peptides, proteins and nucleotides may contain non-natural amino acids or nucleic bases. They may also have chain modifications at the terminal positions. This could be the result of post-translational modifications (PTM), synthesis using non natural amino acids, etc.
 
-In order to deal with those case the system allows to enter seuqences using one letter code and all the modifications in parenthesis either at a terminal position or directly after the residue.
+In order to deal with those cases the system allows to enter sequences using one letter code and all the modifications in parenthesis either at a terminal position or directly after the residue.
 
 Everything that is in parenthesis will stay untouched and if a terminal position contains a parenthesis it will not be modified.
 
