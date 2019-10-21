@@ -1,5 +1,16 @@
 ## PolyCalc: advanced polymer mass analysis
 
+### Your data are safe !
+
+The data that you drag and drop will NOT be submitted to the server. It may seem surprising but
+all the calculations are done in your own browser and you only need internet to load the webpage.
+
+You can therefore use confidential information without any risks.
+
+### Licence
+
+This application is provided under the [MIT licence](https://github.com/cheminfo/polycalc/blob/master/LICENSE).
+
 ### Quick start
 
 #### Load your data
