@@ -1,15 +1,14 @@
-## PolyCalc: advanced polymer mass analysis
+## MSPolyCalc: advanced polymer mass analysis
 
 ### Your data are safe !
 
-The data that you drag and drop will NOT be submitted to the server. It may seem surprising but
-all the calculations are done in your own browser and you only need internet to load the webpage.
+All of the calculations applied during data treatment are performed locally in the browser, with no data transferred between servers. Data handling is therefore done safely and securely, being compatible with confidential data.
 
 You can therefore use confidential information without any risks.
 
 ### Licence
 
-This application is provided under the [MIT licence](https://github.com/cheminfo/polycalc/blob/master/LICENSE).
+This application is provided under the [MIT licence](https://github.com/cheminfo/mspolycalc/blob/master/LICENSE).
 
 ### Quick start
 
@@ -44,7 +43,7 @@ The resulting theoretical peak list (calculated in background) will be compared 
 
 ##### 3. Isotopic pattern Similarity Tool
 
-PolyCalc can help users evaluate matching scores for polymer distribution assignment. Peaks can be assigned based on monoisotopic masses only (similarity = 0 - function is ignored) or based on a full isotopic pattern matching evaluation (similarity > 0). In that case, users must define the way to compare isotopic patterns, in particular the range of masses.
+MSPolyCalc can help users evaluate matching scores for polymer distribution assignment. Peaks can be assigned based on monoisotopic masses only (similarity = 0 - function is ignored) or based on a full isotopic pattern matching evaluation (similarity > 0). In that case, users must define the way to compare isotopic patterns, in particular the range of masses.
 It is important to fill up the function “Zone” while the function “Width” is optional, and more addressed to advanced users.
 
 <img src="images/zone.png">
@@ -72,7 +71,7 @@ The table contains the following information:
 
 #### Untargeted analysis
 
-When the composition of the polymer is unknown, PolyCalc is able to find the difference in mass between a reference peak as well as possible molecular formula.
+When the composition of the polymer is unknown, MSPolyCalc is able to find the difference in mass between a reference peak as well as possible molecular formula.
 
 In order to define the reference peak simply click on the label over the peak. The value of the label will be set in the preferences.
 
