@@ -4,3 +4,6 @@ tips:
   - minRev: 373
     title: Add trace from mass spectrum
     name: addTraceForMass
+  - minRev: 373
+    title: Add labels in chromatogram
+    name: addLabels
