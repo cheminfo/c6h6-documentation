@@ -16,3 +16,6 @@ tips:
   - minRev: 404
     title: Relative mass
     name: relative
+  - minRev: 404
+    title: Isotopic distribution similarity
+    name: similarity
