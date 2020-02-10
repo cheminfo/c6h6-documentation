@@ -19,21 +19,21 @@
   "homepage": "https://github.com/cheminfo/c6h6-documentation#readme",
   "dependencies": {
     "child-process-promise": "^2.2.1",
-    "find": "^0.2.9",
-    "fs-extra": "^7.0.1",
+    "find": "^0.3.0",
+    "fs-extra": "^8.1.0",
     "fs-find": "^0.4.0",
     "gitbook": "^3.2.3",
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-toggle-chapters": "0.0.3",
-    "lodash": "^4.17.11",
-    "yaml": "^1.2.1"
+    "lodash": "^4.17.15",
+    "yaml": "^1.7.2"
   },
   "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-config-cheminfo": "^1.18.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-markdown": "^1.0.0-rc.0"
+    "eslint": "^6.6.0",
+    "eslint-config-cheminfo": "^2.0.4",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.3",
+    "eslint-plugin-markdown": "^1.0.1"
   }
 }
