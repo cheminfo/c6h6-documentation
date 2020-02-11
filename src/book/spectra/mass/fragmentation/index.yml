@@ -1,2 +1,6 @@
 description: Simulate mass fragmentation
 uuid: 0e35f561fff36fef6c9e7341a9eec858
+tips:
+  - minRev: 294
+    title: Assign fragmentation
+    name: assign
