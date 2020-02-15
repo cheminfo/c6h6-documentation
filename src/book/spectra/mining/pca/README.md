@@ -13,6 +13,9 @@ The workflow is the following:
 - Calculate the PCA
 - Display each spectrum in the new space
 
+<a href="spectraAnalysis_spectraSelection">.</a>
+
+
 ## Select samples
 
 In order to facilitate the analysis of the spectra it is advised to have samples containing representative spectra in order to evaluate the intra-variability as well as the reproducibility.
