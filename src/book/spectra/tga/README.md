@@ -2,7 +2,7 @@
 
 This module allows visualizing and processing TGA curves. You can upload `txt` files and `jcamp` files.
 
-![Screenshot of the TGA analysis module](TGA_analysis.png)
+![Screenshot of the TGA analysis module](images/analysis.png)
 
 ## Upload
 
@@ -16,7 +16,7 @@ If you click on the color in a row, you can select any color you which for the l
 
 In the chart you can draw a rectangle to zoom and double click to reset. You can move the graphs by pressing `SHIFT` while dragging them.
 
-Currently, we can display weight vs. temperature and weight vs. time. A percentage-weight-loss view is currently being implemented. 
+Currently, we can display weight vs. temperature and weight vs. time. A percentage-weight-loss view is currently being implemented.
 
 ## Processing
 
