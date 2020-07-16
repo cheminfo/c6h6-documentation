@@ -26,7 +26,7 @@
     "gitbook-cli": "^2.3.2",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-toggle-chapters": "0.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "yaml": "^1.7.2"
   },
   "devDependencies": {
