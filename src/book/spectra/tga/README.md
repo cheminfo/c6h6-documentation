@@ -20,8 +20,20 @@ Currently, we can display weight vs. temperature and weight vs. time. A percenta
 
 ## Processing
 
-Field 4 gives you some basic processing tools. For example, you can get the derivatives of the patterns or normalize it. To scale the maximum intensity to one, you should use the `Rescale (x to y)` option.
+Field 4 gives you some basic processing tools.
 
-## Feature requests and support
+- Units: select if you plot `Weight [mg] versus temperature [°C]` or `Weight [mg] versus time [s]` 
+- Display tracking info: display information about the position of the mouse
 
-If you need additional tools and support for this module, [Open an issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue) on the [tga-spectrum GitHub repository](https://github.com/cheminfo/tga-spectrum) or simply post a question on the [forum](https://groups.google.com/forum/#!forum/cheminfo).
+### Normalization
+
+- Range: select the min / max X value to display
+- Processing: display either the normal spectrum, first derivative or second derivative
+- Number of points: reduce the number of points in the spectra. This is a nice feature
+  that allows to align the spectra on the 'x' axis but can only be used if the spectrum
+  is monotone !
+- Filters: various filter allowing to process the data. By default the `Divide by max Y` filter
+  is applied and allows to get as max Y value 1.
+- Exclusions: define zone that should be ignored during processing.
+
+
