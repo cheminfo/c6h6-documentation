@@ -1,2 +1,9 @@
 description: Image analysis based on Region Of Interests (ROI)
 uuid: 187642421e225f8cfcd65a9243394a72
+tips:
+  - minRev: 469
+    title: Define pixel size
+    name: definePixelSize
+  - minRev: 469
+    title: Annotations
+    name: annotations
