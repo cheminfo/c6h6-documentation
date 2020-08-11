@@ -1,7 +1,8 @@
-# Image analysis based on Region Of Interests
+# Image analysis
 
-This view allows to identify Region of Interests on grey scale images. If the source if a color
-image a first step will be to convert it to a grey scale image using one of the provided algorithms.
+This view allows to annotate images as well as identify Region of Interests on grey scale images.
+
+If the source if a color image a first step will be to convert it to a grey scale image using one of the provided algorithms.
 
 <img src="images/greysAlgorithms.png" />
 
