@@ -2,5 +2,5 @@ description: Generate a NMR databaset
 uuid: 5cb5799992e454076785b552ab9d84b7
 tips:
   - minRev: 70
-    title: View any acquisition parameters
-    name: viewParameter
+    title: Navigation
+    name: navigation
