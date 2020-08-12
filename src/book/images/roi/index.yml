@@ -7,6 +7,9 @@ tips:
   - minRev: 469
     title: Annotations
     name: annotations
-    - minRev: 469
+  - minRev: 469
     title: Save and load preferences
     name: saveLoadPrefs
+  - minRev: 469
+    title: Select ROIs
+    name: selectROIs
