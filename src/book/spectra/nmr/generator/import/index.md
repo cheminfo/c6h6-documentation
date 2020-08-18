@@ -1,5 +1,5 @@
-## Import data
+## Getting started
 
-Default molfiles can be added by click on `Load demo`, or `drag & drop` a SDF file which containing molfiles of interest for analysis.
+To get started with the tool, a demo  molfile is provided. To use it, either click on `Load demo`. Or use `drag & drop` module to add the SDF file containing the molecules of your choice. 
 
 <img src="images/import.png">

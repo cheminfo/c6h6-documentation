@@ -1,5 +1,5 @@
-## Set the biomarkers
+## Define biomarkers
 
-To select the biomarkers in the dataset just double click on the red X and this will allow to choose the number of spectra for each class, furthermore the mean and the standard deviation for each biomarker.
+To select the biomarkers, i.e., molecules with a different distribution among the defined populations, double click on the red cross in the table on the left . This will enable you to choose the number of spectra for each class that should be generated, and to set the mean and the standard deviation for each biomarker.
 
 <img src="images/biomarkers.png">

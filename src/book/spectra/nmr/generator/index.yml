@@ -2,7 +2,7 @@ description: Generate a NMR databaset
 uuid: 5cb5799992e454076785b552ab9d84b7
 tips:
   - minRev: 70
-    title: Import data
+    title: Getting started
     name: import
   
   - minRev: 70
@@ -10,11 +10,11 @@ tips:
     name: setup
 
   - minRev: 70
-    title: Specify settings
+    title: Define resolution, categories, and the default distribution
     name: settings
 
   - minRev: 70
-    title: Set the biomarkers
+    title: Define biomarkers
     name: biomarkers
   
   - minRev: 70
