@@ -13,3 +13,6 @@ tips:
   - minRev: 469
     title: Select ROIs
     name: selectROIs
+  - minRev: 500
+    title: ROIs information
+    name: rois
