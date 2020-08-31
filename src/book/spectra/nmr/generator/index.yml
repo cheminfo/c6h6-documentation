@@ -2,5 +2,21 @@ description: Generate a NMR databaset
 uuid: 5cb5799992e454076785b552ab9d84b7
 tips:
   - minRev: 70
-    title: Navigation
-    name: navigation
+    title: Getting started
+    name: import
+  
+  - minRev: 70
+    title: Select the metabolites to be part of dataset
+    name: setup
+
+  - minRev: 70
+    title: Define resolution, categories, and the default distribution
+    name: settings
+
+  - minRev: 70
+    title: Define biomarkers
+    name: biomarkers
+  
+  - minRev: 70
+    title: Check and download
+    name: generate
