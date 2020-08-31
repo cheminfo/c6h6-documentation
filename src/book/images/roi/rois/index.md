@@ -47,3 +47,13 @@ The feret diameters of a ROI can be calculated using a virtual caliper. 2 diamet
 - max: the maximal size of the ROI that could be measured by a caliper
 
 <img src="feret.svg">
+
+### Other parameters
+
+#### Sphericity
+
+#### ψA (Aspect ratio)
+
+Is a measure of deviation from roundness that it not sentitive to "bumps". It is calculated as
+
+#### Roundness
