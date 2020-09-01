@@ -6,15 +6,17 @@ Many parameters characterizing ROIs are automatically calculated.
 
 Region Of Interest (ROI) posses various characteristics. Among them:
 
-- surface: the number of pixels in the ROI
-- external: the number of pixels that touch at least on one side an outside pixel
-- perimeter:
+- Surface: the number of pixels in the ROI
+- External: the number of pixels that touch at least one other external pixel
+- Perimeter: ROI perimeter using cutting edge algorithm (see illustration)
 - Diameter of a circle of equal projection area (D<sub>EQPC</sub>):
   <img src="https://tex.cheminfo.org/?tex=D_%7BEQPC%7D%20%3D%202%20%5Csqrt%7B%5Cfrac%7BSurface%7D%7B%5Cpi%7D%7D"/>
 - Diameter of a circle of equal perimeter (D<sub>PED</sub>):
   <img src="https://tex.cheminfo.org/?tex=D_%7BPED%7D%20%3D%20%5Cfrac%7BExternal%7D%7B%5Cpi%7D"/>
 
 <img src="roi.svg">
+
+<img src="perimeter.svg">
 
 ### Minimum bounding rectangle (MBR)
 
@@ -64,3 +66,7 @@ A perfect sphere as a sphericity of 1. The idea is that irregular shape causes a
 The convexity (ψ<sub>C</sub>) describes the compactness of a particle. The convexity is the ratio of the projection area itself and the area of the convex hull. The maximum theoretical convexity is 1, if there are no concave regions. Due to the pixelation of images, all particles seem to have small concave regions, corresponding to the tiny steps with every pixel in the perimeter line. Therefore, the maximum convexity calculated in reality is mostly limited to 0.99.
 
 <img src="https://tex.cheminfo.org/?tex=%5Cpsi_C%20%3D%20%5Cfrac%7BROI%7Bsurface%7D%7D%7BCH_%7Bsurface%7D%7D"/>
+
+### Roundness
+
+<img src="https://tex.cheminfo.org/?tex=Roundness%20%3D%20%5Cfrac%7B4%20*%20ROI_%7Bsurface%7D%7D%7B%5Cpi%20*%20Feret_%7Bmax%7D%7D"/>
