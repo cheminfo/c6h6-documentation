@@ -16,6 +16,22 @@ Region Of Interest (ROI) posses various characteristics. Among them:
 
 <img src="roi.svg">
 
+Calculation of perimeter of pixel based images is not a trivial topic. This has been reviewed in the [literature](http://urn.nb.no/URN:NBN:no-13191).
+
+In this tool we use the following approach:
+
+- We count all the pixel sides that are outside the ROI (each side counts as 1)
+- If a pixel has 2 external sides, we remove from the sum (2 - √2) = ~0.59 
+- If a pixel has 3 external sides, we remove from the sum 2 * (2 - √2) = ~ 1.17
+
+This means that for each border pixel the contribution to the perimeter is:
+
+- pixels with one external side: 1
+- pixels with two external sides: ~1.41
+- pixels with three external sides: ~1.83
+
+Practically the shape of the perimeter is represented in the following image:
+
 <img src="perimeter.svg">
 
 ### Minimum bounding rectangle (MBR)
