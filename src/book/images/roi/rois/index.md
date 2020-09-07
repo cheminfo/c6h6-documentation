@@ -21,8 +21,8 @@ Calculation of perimeter of pixel based images is not a trivial topic. This has 
 In this tool we use the following approach:
 
 - We count all the pixel sides that are outside the ROI (each side counts as 1)
-- If a pixel has 2 external sides, we remove from the sum (2 - √2) = ~0.59 
-- If a pixel has 3 external sides, we remove from the sum 2 * (2 - √2) = ~ 1.17
+- If a pixel has 2 external sides, we remove from the sum (2 - √2) = ~0.59
+- If a pixel has 3 external sides, we remove from the sum 2 \* (2 - √2) = ~ 1.17
 
 This means that for each border pixel the contribution to the perimeter is:
 
@@ -72,8 +72,11 @@ The feret diameters of a ROI can be calculated using a virtual caliper. 2 diamet
 
 #### Sphericity
 
-The sphericity is the ratio of the perimeter of the equivalent circle, P<sub>EQPC</sub>, to the real perimeter, P<sub>real</sub>.
+The sphericity is the ratio of the perimeter of the equivalent circle, P<sub>PED</sub>, to the real perimeter, P<sub>real</sub>.
 A perfect sphere as a sphericity of 1. The idea is that irregular shape causes an increase in the perimeter and therefore this ratio has a lower value. Knowing that the smallest possible perimeter for a given projection area is a circle, 0 < S ≤ 1.
+
+Please note that the evaluation of perimeter is a complex topic and check above the approach that is used in this application. It
+is not impossible that the sphericity is slightly higher than 1.
 
 <img src="https://tex.cheminfo.org/?tex=S%20%3D%20%5Cfrac%7BP_%7BEQPC%7D%7D%7BP_%7Breal%7D%7D"/>
 

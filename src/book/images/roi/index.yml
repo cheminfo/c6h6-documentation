@@ -16,3 +16,6 @@ tips:
   - minRev: 500
     title: ROIs information
     name: rois
+  - minRev: 690
+    title: ROI categories
+    name: categories
