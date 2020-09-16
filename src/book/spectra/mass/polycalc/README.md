@@ -44,7 +44,7 @@ The resulting theoretical peak list (calculated in background) will be compared 
 ##### 3. Isotopic pattern Similarity Tool
 
 MSPolyCalc can help users evaluate matching scores for polymer distribution assignment. Peaks can be assigned based on monoisotopic masses only (similarity = 0 - function is ignored) or based on a full isotopic pattern matching evaluation (similarity > 0). In that case, users must define the way to compare isotopic patterns, in particular the range of masses.
-It is important to fill up the function “Zone” while the function “Width” is optional, and more addressed to advanced users.
+It is important to fill up the function “Zone” (in Da) while the function “Width” is optional, and more addressed to advanced users.
 
 <img src="images/zone.png">
 
@@ -56,18 +56,18 @@ After clicking on assign the system will try to match the possible molecular for
 <img src="images/tableResults.png">
 
 The table contains the following information:
-* `Polymer chain`: the composition of the polymer
-* `Type`: a color representation of the composition
+* `Polymer chain`: the semi developed molecular formula of the polymer chain
+* `Type`: the monomer composition of each chain is described through a color representation
 * `MF`: the molecular formula corresponding to the non ionized polymer
 * `Adduct`: the ion that was added to obtain the observed mass (based on the `ionizations` preference)
 * `MF mass`: the theoretical monoisotopic mass corresponding the the non ionized polymer
-* `m/z`: the theoretical observed monoisotopic mass for the adduct
+* `m/z`: the theoretical monoisotopic mass of the corresponding ion
 * `Δ ppm`: difference between theoretical and experimental mass
-* `z`: charge of the adduct
-* `Intensity`: relative intensity to the base peak
+* `z`: charge state of the ion
+* `Intensity`: intensity of the peak identified as monoisotopic, relative to the base peak
 * `Similarity`: percentage of similarity for the isotopic distribution
-* `%`: percentage of composition based on all the peaks composition the isotopic distribution
-* `G`: number polymer that is grouped because htey have the same moelcular formula (different adducts)
+* `%`: sum of the assigned peaks areas (all peaks included in the defined Zone) with respect to the sum of all detected peaks areas (experimental peak picking)
+* `G`: number of ionizations for a given polymer chain (same polymer with different adducts)
 
 #### Untargeted analysis
 
@@ -79,19 +79,19 @@ The system will explore all the possible molecular formula defined in MF range. 
 
 <img src="images/explorePrefs1.png">
 
-In order to search the corresponding molecular formula it is required to specify the charge of the target peak. This should be automatically set when you click on the label.
+In order to search the corresponding molecular formula it is required to specify the charge of the targeted peak. This should be automatically set when you click on the label.
 
 `Show MF` defines the number of best matching molecular formula that should be displayed.
 
-`Search monoisotopic` tries to look for the monoisotopic mass that may be on the left (lower mass) than the highest peak. If there is a peak of lower mass distant from less than 1u that has a ratio over the specified value it is considered as the monoisotopic mass. 
+`Search monoisotopic` In an isotopic distribution, the peak of highest intensity is not always the monoisotopic peak. Thus, this function tries to look for a monoisotopic peak that would be on the left (lower mass) of the highest peak. If there is a peak of lower mass distant from less than 1u, and that has a ratio over the specified value it is considered as the monoisotopic mass. 
 
 <img src="images/explorePrefs2.png">
 
-Matching molecular formula is colored based on the error (in ppm) as specified using the following table:
+Matching molecular formula are colored based on the error (in ppm) as specified using the following table:
 
 <img src="images/explorePrefs3.png">
 
-The result of the analysis display the relative mass (on the m/z scale) as well as the list of best matching molecular formula and the charge.
+The result of the analysis displays the relative mass (on the m/z scale) as well as the list of best matching molecular formula and the charge.
 
 <img src="images/exploreResult.png">
 
