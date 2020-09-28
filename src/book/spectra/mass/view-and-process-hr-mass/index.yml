@@ -19,3 +19,6 @@ tips:
   - minRev: 500
     title: Isotopic distribution similarity
     name: similarity
+  - minRev: 614
+    title: Assignment
+    name: assignment
