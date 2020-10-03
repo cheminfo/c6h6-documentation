@@ -10,3 +10,6 @@ tips:
   - minRev: 1
     title: Exporting results to a spreadsheet
     name: tableExport
+  - minRev: 760
+    title: Filtering using a function
+    name: filteringFunction
