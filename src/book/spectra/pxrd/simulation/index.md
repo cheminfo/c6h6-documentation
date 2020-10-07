@@ -1,4 +1,4 @@
-# CIP file simulation
+# CIF file simulation
 
 It is possible to predict X-ray pattern from a CIF file using a webservice available on https://xrd.cheminfo.org.
 

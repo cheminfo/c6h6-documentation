@@ -2,5 +2,5 @@ description: View compare and simulate PXRD
 uuid: c7bc5cf7caebbff02b1ae83e32bfd68f
 tips:
     - minRev: 95
-        title: CIP file simulation
+        title: Simulation from CIF file
         name: simulation
