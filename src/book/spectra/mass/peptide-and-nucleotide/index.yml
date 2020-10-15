@@ -1,6 +1,6 @@
 description: Analyse high resolution mass spectra for peptides and nucleotides
 uuid: 1fdc4456ddfda089d9a67f9366ac6883
 tips:
-  - minRev: 1
+  - minRev: 1000
     title: Entering a peptidic sequence
     name: peptidicSequence
