@@ -1,0 +1,14 @@
+description: Built and display your well plates experiments
+uuid: 587f9cace9574a1b97555f9efe07ad90
+tips:
+  - minRev: 70
+    title: Create and reuse well plate templates
+    name: templates
+  
+  - minRev: 70
+    title: Create your experiments from templates
+    name: experiments
+
+  - minRev: 70
+    title: Save experimental data
+    name: results
