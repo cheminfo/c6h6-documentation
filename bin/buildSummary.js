@@ -27,13 +27,13 @@ function buildSummary(homedir) {
             console.log('related.title and related.name are mandatory', dir, related);
             continue;
           }
-          let linkFile = join(homedir, dir, related.name, 'index.md');
+          let linkFile = join(homedir, dir, related.name, 'README.md');
           if (!fs.existsSync(linkFile)) {
             console.log('The file does not exist: ', linkFile);
             continue;
           }
-          summary.push(`* [${related.title}](${dir}/${related.name}/index.md)`);
-          localSummary.push(`* [${related.title}](${related.name}/index.md)`);
+          summary.push(`* [${related.title}](${dir}/${related.name})`);
+          localSummary.push(`* [${related.title}](${related.name})`);
         }
         localSummary.push('');
       }
