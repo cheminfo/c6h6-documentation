@@ -1,2 +1,9 @@
 description: Spectra deconvolution
 uuid: e62a47d76949b3e2e1eaec845d486d81
+related:
+  - title: Spectra selection
+    name: spectraAnalysis_spectraSelection
+  - title: Data normalization
+    name: spectraAnalysis_normalization
+  - title: Spectra visualization
+    name: spectraAnalysis_visualization

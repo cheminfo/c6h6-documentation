@@ -19,6 +19,16 @@ function copyPagesToTemp(sourceDir, targetDir) {
       fsExtra.copySync(dir, join(targetDir, toc.uuid));
     }
   }
+  for (let file of files) {
+    let yaml = fs.readFileSync(file, 'utf8');
+    let toc = YAML.parse(yaml);
+    if (toc.related) {
+      for (let related of toc.related) {
+        fsExtra.copySync(join(targetDir, related.name), join(targetDir, toc.uuid, related.name));
+      }
+    }
+  }
+
 }
 
 module.exports = copyPagesToTemp;

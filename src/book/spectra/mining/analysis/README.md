@@ -11,15 +11,13 @@ This program allows to define and apply analytical procedure on one or more spec
 
 This software allows either to create new analytical report of to use an existing one.
 
-
-
 ## Spectra selection, normalization and previsualization
 
-The first step is to select the spectra and you may follow this [tutorial](../common/selection/README.md)
+The first step is to select the spectra and you may follow this [tutorial](spectraAnalysis_spectraSelection)
 
-Once spectra have been selected, data normalization filters can be applied and [more information is available here](../common/normalization/README.md).
+Once spectra have been selected, data normalization filters can be applied and [more information is available here](spectraAnalysis_normalization).
 
-The superimposed spectra can be manipulated without numerous [advanced features described here](../common/visualization/README.md).
+The superimposed spectra can be manipulated without numerous [advanced features described here](spectraAnalysis_visualization).
 
 ## Load existing analytical procedure
 

@@ -1,2 +1,9 @@
 description: Spectra similarity
 uuid: c5a2739a6e2bb270fde2ceb278546fa0
+related:
+  - title: Spectra selection
+    name: spectraAnalysis_spectraSelection
+  - title: Data normalization
+    name: spectraAnalysis_normalization
+  - title: Spectra visualization
+    name: spectraAnalysis_visualization

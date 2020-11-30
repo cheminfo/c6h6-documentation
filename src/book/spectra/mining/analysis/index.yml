@@ -1,8 +1,12 @@
 description: Create analytical reports from spectra
 uuid: 02d6bbc6c04edd24ce90b146348573f1
 related:
+  - title: Spectra selection
+    name: spectraAnalysis_spectraSelection
   - title: Data normalization
-    name: ../spectraAnalysis_normalization
+    name: spectraAnalysis_normalization
+  - title: Spectra visualization
+    name: spectraAnalysis_visualization
 tips:
   - minRev: 400
     title: Get distinct colors

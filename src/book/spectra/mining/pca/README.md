@@ -17,11 +17,11 @@ The workflow is the following:
 
 ## Spectra selection, normalization and previsualization
 
-The first step is to select the spectra and you may follow this [tutorial](../common/selection/README.md)
+The first step is to select the spectra and you may follow this [tutorial](spectraAnalysis_spectraSelection)
 
-Once spectra have been selected, data normalization filters can be applied and [more information is available here](../common/normalization/README.md).
+Once spectra have been selected, data normalization filters can be applied and [more information is available here](spectraAnalysis_normalization).
 
-The superimposed spectra can be manipulated without numerous [advanced features described here](../common/visualization/README.md).
+The superimposed spectra can be manipulated without numerous [advanced features described here](spectraAnalysis_visualization).
 
 ## Create the PCA model
 
