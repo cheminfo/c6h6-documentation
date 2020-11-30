@@ -1,5 +1,12 @@
 description: Sample edition
 uuid: 15c9a2dcd55c963fdedf2c18a1471b03
+related:
+  - title: OCL molecule editor
+    name: moleculeEditor_ocl
+  - title: OCL custom elements
+    name: moleculeEditor_oclAtoms
+  - title: OCL stereochemistry
+    name: moleculeEditor_oclStereo
 tips:
   - minRev: 810
     title: Get a structure from a template

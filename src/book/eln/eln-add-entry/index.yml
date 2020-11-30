@@ -1,5 +1,8 @@
 description: Add and modify a reaction
 uuid: 13a5028017f3fdcd3d5c0ce32120e876
+related:
+  - title: JSME molecule editor
+    name: moleculeEditor_jsme
 tips:
   - minRev: 765
     title: Lookup for products
