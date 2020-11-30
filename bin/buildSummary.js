@@ -32,8 +32,8 @@ function buildSummary(homedir) {
             console.log('The file does not exist: ', linkFile);
             continue;
           }
-          summary.push(`* [${related.title}](${dir}/${related.name})`);
-          localSummary.push(`* [${related.title}](${related.name})`);
+          summary.push(`* [${related.title}](${dir}/${related.name}/README.md)`);
+          localSummary.push(`* [${related.title}](${related.name}/README.md)`);
         }
         localSummary.push('');
       }
