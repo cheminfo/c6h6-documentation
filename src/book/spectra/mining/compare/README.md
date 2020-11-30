@@ -6,4 +6,4 @@ The first step is to select the spectra and you may follow this [tutorial](../co
 
 Once spectra have been selected, data normalization filters can be applied and [more information is available here](../common/processing/README.md).
 
-The superimposed spectra can be manipulated without numerous advanced features described here.
+The superimposed spectra can be manipulated without numerous [advanced features described here](../common/visualization/README.md).
