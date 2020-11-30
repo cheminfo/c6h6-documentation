@@ -20,6 +20,24 @@ function buildSummary(homedir) {
       let toc = YAML.parse(yaml);
       summary.push(`## ${toc.description} [](${dir}/index.yml)\n`);
       localSummary.push(`## ${toc.description} [](${dir}/index.yml)\n`);
+      if (toc.related) {
+        localSummary.push('## RELATED PAGES\n');
+        for (let related of toc.related) {
+          if (!related.title || !related.name) {
+            console.log('related.title and related.name are mandatory', dir, related);
+            continue;
+          }
+          let linkFile = join(homedir, dir, related.name, 'index.md');
+          if (!fs.existsSync(linkFile)) {
+            console.log('The file does not exist: ', linkFile);
+            continue;
+          }
+          summary.push(`* [${related.title}](${dir}/${related.name}/index.md)`);
+          localSummary.push(`* [${related.title}](${related.name}/index.md)`);
+        }
+        localSummary.push('');
+      }
+
       if (toc.tips) {
         localSummary.push('## TIPS\n');
         let tips = toc.tips.sort((a, b) => a.index - b.index);

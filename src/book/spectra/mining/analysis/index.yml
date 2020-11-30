@@ -1,9 +1,12 @@
 description: Create analytical reports from spectra
 uuid: 02d6bbc6c04edd24ce90b146348573f1
+related:
+  - title: Data normalization
+    name: ../spectraAnalysis_normalization
 tips:
   - minRev: 400
     title: Get distinct colors
     name: colors
   - minRev: 411
-    title: Insert chart
+    title: Insert chart xxx
     name: chart
