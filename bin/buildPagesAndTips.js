@@ -21,7 +21,7 @@ async function buildPagesAndTips(sourceDir, targetDir, layoutDir) {
   //  var stdout = result.stdout;
   //  var stderr = result.stderr;
 
-  let dirs = fs.readdirSync(sourceDir).filter((item) => item.length === 32);
+  let dirs = fs.readdirSync(sourceDir).filter((item) => item.length > 16);
   for (let dir of dirs) {
     console.log('Processing: ', dir);
     let summary = join(sourceDir, dir, 'SUMMARY.md');
@@ -37,9 +37,9 @@ async function buildPagesAndTips(sourceDir, targetDir, layoutDir) {
           pagesDir,
           dir
         )}`
-      ).catch( (e) => {
-          console.log('Build excpeption: ',e);
-          console.log(e.stdout);
+      ).catch((e) => {
+        console.log('Build excpeption: ', e);
+        console.log(e.stdout);
       });
     }
   }
