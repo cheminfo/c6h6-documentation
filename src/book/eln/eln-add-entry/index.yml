@@ -34,3 +34,6 @@ tips:
   - minRev: 979
     title: Define snippets
     name: defineSnippets
+  - minRev: 979
+    title: Same reagent multiple times
+    name: multipleTimes
