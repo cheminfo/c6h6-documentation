@@ -11,42 +11,15 @@ This program allows to define and apply analytical procedure on one or more spec
 
 This software allows either to create new analytical report of to use an existing one.
 
-## Select and preprocess spectra
 
-This application can be applied on different kind of spectra. You will first need to decide what kind of spectra you want to use by selecting the corresponding category:
 
-<img src="images/select.png">
+## Spectra selection, normalization and previsualization
 
-Selection of spectra to analyse is achieved with one of those 3 methods:
+The first step is to select the spectra and you may follow this [tutorial](../common/selection/README.md)
 
-At the level of the sample by either clicking on the `+`, this will add all the spectra related to this sample or on the `+` on the top of the sample box to add all the spectra of all the selected samples.
+Once spectra have been selected, data normalization filters can be applied and [more information is available here](../common/normalization/README.md).
 
-<img src="images/selectSample.png">
-
-If you select a sample it is also possible to add a specific spectrum by clicking on the `+` at the level of the spectra list.
-
-<img src="images/selectSpectra.png">
-
-From the list of selected spectra it is still possible to:
-
-- delete a specific spectrum by clicking on the trash next to the spectrum
-- delete all the selected spectra by clicking on the eraser on the top of the window
-- change individually the color of spectra
-
-<img src="images/selection.png">
-
-Depending your preferences (`auto-refresh`) you will either see directly the spectra or you need to click on `Update data and chart`. This will recalculate the spectra based on the specified normalization preferences:
-
-<img src="images/preferences.png">
-
-- `Display original data or normalized data` displaying the normalized data allows to see exactly what will be used for further calculations. Displaying the original data is only useful during new method development.
-
-### Normalization preferences
-
-- `Range`: specify a range (X axis) to consider (by default the full spectrum)
-- `Number of points`: reduce the number of points to the specified value
-- `Filters`: define a list of filters to apply on the data. For example to apply [Standard Normal Variate (SNV)](http://wiki.eigenvector.com/index.php?title=Advanced_Preprocessing:_Sample_Normalization#SNV_.28Standard_Normal_Variate.29) you need to add the 2 filters: `center mean`and `divide by SD`
-- `Exclusions`: specify a list of ranges that should be ignore for the processing
+The superimposed spectra can be manipulated without numerous [advanced features described here](../common/visualization/README.md).
 
 ## Load existing analytical procedure
 

@@ -2,7 +2,7 @@
 
 A spectrum may 
 
-## Data preparation
+## Spectra selection, normalization and previsualization
 
 The first step is to select the spectra and you may follow this [tutorial](../common/selection/README.md)
 

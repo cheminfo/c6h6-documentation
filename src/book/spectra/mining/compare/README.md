@@ -2,7 +2,7 @@
 
 Multiple spectra analysis allows to quickly extract information about a set of spectra.
 
-## Data normalization and previsualization
+## Spectra selection, normalization and previsualization
 
 The first step is to select the spectra and you may follow this [tutorial](../common/selection/README.md)
 
