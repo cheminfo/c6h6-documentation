@@ -29,6 +29,10 @@ Depending the analysis some region should be removed in order to improve the ana
 
 ## Large dataset
 
+The list of the spectra in the dataset is displayed in the following table: 
+
+<img src="images/memory.png">
+
 In some cases it is not possible to keep in memory the original spectra and the system will only keep the normalized spectra. Therefore it will not be possible to change the normalization parameters anymore.
 
 ## Preview
@@ -36,3 +40,5 @@ In some cases it is not possible to keep in memory the original spectra and the 
 A preview of the normalized spectra as well as the exclusions zones will be displayed. This allows to fine tune the processing.
 
 <img src="images/preview.png">
+
+The superimposed spectra can be manipulated without numerous [advanced features described here](../visualization/README.md).

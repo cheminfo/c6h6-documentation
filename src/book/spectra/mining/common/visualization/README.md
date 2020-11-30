@@ -1,39 +1,66 @@
-# Spectra selection
+# Spectra visualization
 
 
+Numerous options are available to display the either all the spectra in the dataset or the selected spectra in the dataset.
 
-All the spectra analysis tools start with a phase of selection.
+<img src="images/selection.png">
 
+## Selection of spectra in the dataset
 
-## Select samples
+The toolbar on the top of the list of spectra in the dataset provides many options (from left to right):
 
-In order to facilitate the analysis of the spectra it is advised to have samples containing representative spectra in order to evaluate the intra-variability as well as the reproducibility.
+<img src="images/selectionTools.png">
 
-Selection of spectra to analyse is achieved with one of those 3 methods:
+- Remove all spectra from dataset
+- Select category: select which property contains the category description
+- Download normalized matrix
+- Recolor spectra based on category: a different color will be applied for each category. By default the sample reference
+- Select all spectra
+- Append to selected spectra
+- Select only current spectra
+- Remove spectra from current selection
+- Unselect all spectra
 
-At the level of the sample by either clicking on the `+`, this will add all the spectra related to this sample or on the `+` on the top of the sample box to add all the spectra of all the selected samples.
+## Graph options
 
-<img src="images/selectSample.png">
+It is possible to either display the selected spectra, all the spectra or various derived information.
 
-If you select a sample it is also possible to add a specific spectrum by clicking on the `+` at the level of the spectra list.
+<img src="./images/display.png">
 
-<img src="images/selectSpectra.png">
+Customization of the display is achieved using the chart toolbar:
 
+<img src="./images/graphTools.png">
 
-## Preprocess the spectrum
+### Display spectra
 
-In order to create the PCA it is important:
-- to select the representative part of the spectra that is expected to be important for the analysis (high variance between different samples, for infrared 800 to 1600 for example)
-- to remove large peaks not characteristic of the sample (like water in NMR spectra) that could interfer with he analysis
-- to reduce the number of points in order to accelerate the analysis.
-- to preprocess the data in order to reduce the impact of sample preparation. One classical preprocessing algorithm is [Standard Normal Variate (SNV)](http://wiki.eigenvector.com/index.php?title=Advanced_Preprocessing:_Sample_Normalization#SNV_.28Standard_Normal_Variate.29). This preprocessing can be achieved by selecting the 2 options `center data`and `scale data`.
+The first options allows to either display all the spectra, only the selected spectra or nothing.
 
-<img src="images/preferences.png">
+<img src="./images/selected.png">
 
-2 previous are available while filtering the data. The first preview, directly applied on the original spectra will display the area taken into account
+Displaying no spectrum is useful when displaying other derived data.
 
-<img src="images/preview.png">
+### Original / normalized
 
-The second preview will show exactly the points that will be submitted to the PCA algorithm. Those previews can be visualize in the `PCA` tab.
+This options allows to either display the original spectra or the normalized data. Most of the time we will display normalized data. Those are the data that will be analysed and normally they also take less room in memory. 
 
-<img src="images/normalized.png">
+<img src="./images/original.png">
+
+### Boxplot
+
+The boxplot kind of representation allows to display the first / third quartile as a dark grey zone for each X point. The min and max values are represented as a light grey zone and the median is represented as a line for which the color varies based on the standard deviation (red: high variation, blue: small variation).
+
+<img src="./images/boxplot.png">
+
+### Tracking information
+
+By selecting the tracking information you will display the X values and the corresponding Y values for all the  spectra.
+
+<img src="./images/tracking.png">
+
+### Correlation
+
+Correlation of the vector represented by the Y points can be useful to determine which peaks are correlated in a big mixture of products. This is known in NMR metabolomics as [STOCSY](https://dx.doi.org/10.1021/ac048630x).
+
+By SHIFT + ALT + click you can selected the X value for which you would like to check correlation. Strongly correlated signals will appear in red while non correlated signals are blue.
+
+<img src="./images/correlation.png">
