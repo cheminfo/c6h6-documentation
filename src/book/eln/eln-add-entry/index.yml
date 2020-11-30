@@ -24,7 +24,7 @@ tips:
     name: productsInfo
   - minRev: 932
     title: Copy the product as molfile
-    name: copyProducts
+    name: copyProduct
   - minRev: 979
     title: Insert snippets using abbreviation
     name: insertSnippets
@@ -32,7 +32,7 @@ tips:
     title: Insert snippets from dialog
     name: insertSnippetsDialog
   - minRev: 979
-    title: Define snippets
+    title: Define snippetsapp
     name: defineSnippets
   - minRev: 979
     title: Same reagent multiple times
