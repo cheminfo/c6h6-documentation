@@ -19,6 +19,7 @@ You may also apply various `Filters` that allows to normalize or transform the d
 - Rescale: set the min value to 0 and the max value to 1
 - Normalize: set the sum of all the points to 1
 - Align: create a peak picking between `from` / `to` and calculate the mean X value between the `nbPeaks` highest peaks. The spectrum will be moved so that the mean has the `targetX` value.
+- Pareto: Pareto scaling, which uses the square root of standard deviation as the scaling factor, circumvents the amplification of noise by retaining a small portion of magnitude information. [10.1016/j.molstruc.2007.12.026](https://dx.doi.org/10.1016/j.molstruc.2007.12.026)
 - Savitzky-golay: smoothing spectra and calculate derivaties based on the following parameters:
   - `windowSize`: smoothing window, must be an odd number
   - `derivative`: enter 0, 1 or 2
