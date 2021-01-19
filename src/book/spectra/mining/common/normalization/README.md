@@ -1,12 +1,12 @@
-# Data normalization
+# Preprocessing
 
-In order to compare spectra it is required to create a matrix. In this matrix each row corresponds to a spectrum while the column are the various values for a specific X. To create this matrix we apply various normalization methods that consist to:
+In order to compare spectra it is required to create a matrix. In this matrix each row corresponds to a spectrum while the columns are the various values for a specific X. To create this matrix we apply various preprocessing methods that consist to:
 
-- preprocess the data in order to reduce the impact of sample preparation or experimental artifacts using various filters
+- filter the data in order to reduce the impact of sample preparation or experimental artifacts using various filters
 - select the representative part of the spectra that is expected to be important for the analysis
-- remove large peaks not characteristic of the sample (like water in NMR spectra) that could interfere with the analysis
+- remove large peaks not characteristic to the sample (like water in NMR spectra) that could interfere with the analysis
 - reduce the number of points in order to accelerate the analysis
-- apply post-processing algorithm allowing to normalize
+- apply matrix related processing allowing to normalize the columns
 
 <img src="images/preferences.png">
 
@@ -41,11 +41,15 @@ Depending the analysis some region should be removed in order to improve the ana
 
 The data normalization process will select equidistant `Nb points` between the `From` and `To` values.
 
-## Post-processing filters
+## Matrix processing
 
 Once all the previous filters have been applied we obtain a matrix in which rows represent the normalized spectra and columns represent the intensity of teach spectrum.
 
-Some filters are using the columns for further processing like Probabilistic Quotient Normalization (PQN, [10.1021/ac051632c](https://dx.doi.org/10.1021/ac051632c)).
+Some filters are using the columns for further processing like:
+
+- PQN: Probabilistic Quotient Normalization ([10.1021/ac051632c](https://dx.doi.org/10.1021/ac051632c))
+- Center mean: for each column the mean of the values will be centered
+- Rescale (0 to 1): for each column the min value will be set to 0 and the max value to 1
 
 ## Large dataset
 
