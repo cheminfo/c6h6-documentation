@@ -40,3 +40,6 @@ tips:
   - minRev: 979
     title: Same reagent multiple times
     name: multipleTimes
+  - minRev: 1139
+    title: Safety information
+    name: safetyInfo
