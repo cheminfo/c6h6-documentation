@@ -17,7 +17,7 @@ A new token of type `user` will then show up in the top right table. With user t
 
 For example, clicking the link under the heading "List all accessible entries:" will lead you to a page which you can find a JSON document will all entries.
 
-<img src="images/allentries.png">
+<img src="images/all_entries.png">
 
 ### Creating entry tokens
 
