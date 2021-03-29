@@ -1,0 +1,19 @@
+description: Upload, process and compare IR spectra
+uuid: 3fc7caa33b9b3eb50bb48920f4788725
+tips:
+  - minRev: 70
+    index: 1
+    title: Upload IR spectra
+    name: upload
+  - minRev: 70
+    index: 2
+    title: Switch between absorbance and transmittance
+    name: switch
+  - minRev: 70
+    index: 3
+    title: Peak picking
+    name: peakPicking
+  - minRev: 70
+    index: 4
+    title: Auto peak picking
+    name: autoPeakPicking
