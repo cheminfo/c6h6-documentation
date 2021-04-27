@@ -35,7 +35,7 @@ tips:
     title: Insert snippets from dialog
     name: insertSnippetsDialog
   - minRev: 979
-    title: Define snippetsapp
+    title: Define snippets
     name: defineSnippets
   - minRev: 979
     title: Same reagent multiple times
