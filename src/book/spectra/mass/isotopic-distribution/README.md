@@ -2,7 +2,7 @@
 
 This tool allows to calculate the theoretical distribution and monoisotopic mass from a MF, allowing predefined groups, chemical modification of amino acids, specification of a given isotope, and modification of the isotopic abundance.
 
-Please use a recent version of Google Chrome !!!
+Please use a recent version of Google Chrome.
 
 ## Molecular formula
 
@@ -32,10 +32,10 @@ Specific isotopic abundances should be written in {}.
 
 Ex:
 
-- C10C{50,50}10 (molecule with 10 atoms of natural abundance carbons and 10 atoms of enriched C (50% of <sup>12</sup>C and 50% of </sup>13C)
+- C10C{50,50}10 (molecule with 10 atoms of natural abundance carbons and 10 atoms of enriched C (50% of <sup>12</sup>C and 50% of <sup>13</sup>C)
 - C{50,50}10
 
-<img src="images/C50-50.png">
+![C50-50](images/C50-50.png)
 
 ### Specify the charges and atoms removal
 
@@ -62,10 +62,10 @@ Ex:
 
 ## Pasting experimental data
 
-Experimental data can be pasted and overlay with the calculated distribution (no similarity scores here). The data should be in a tab-delimited format and you should simply copy / paste the data in the "Drop or paste zone" (first click somewhere outside this window to select the correct menu then paste in the window)
+Experimental data can be pasted and overlay with the calculated distribution (no similarity scores here). The data should be in a tab-delimited format, and you should simply copy / paste the data in the “Drop or paste zone” (first click somewhere outside this window to select the correct menu then paste in the window)
 
 If the spectrum is loaded correctly it will immediately appear in the central window.
 
-<img src="images/experimental.png">
+![Experimental](images/experimental.png)
 
 You can zoom in and out (double click) to look at specific overlay m/z ranges

@@ -1,6 +1,6 @@
 ## Ionizations
 
-In order to observe a neutral molecule the mass spectrometer will charge it using different techniques. This may involve adding protons, remove electrons, etc
+In order to observe a neutral molecule the mass spectrometer will charge it using different techniques. This may involve adding protons, remove electrons, etc.
 
 You can also observe charged molecules resulting of the addition of Na<sup>+</sup>, K<sup>+</sup>, etc.
 
@@ -13,4 +13,4 @@ You may as well specify multiple charges. Here are some examples of allowed patt
 - H+, (H+)2, (H+)3 (addition of one, two or three protons)
 - (H+)-1, (H+)-2, (H+)-3 (removal of one, two or three protons)
 
-<img src="ionization.png">
+![ionization](ionization.png)

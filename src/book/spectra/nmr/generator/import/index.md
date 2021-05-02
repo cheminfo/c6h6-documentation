@@ -1,5 +1,5 @@
 ## Getting started
 
-To get started with the tool, a demo  molfile is provided. To use it, either click on `Load demo`. Or use `drag & drop` module to add the SDF file containing the molecules of your choice. 
+To get started with the tool, a demo molfile is provided. To use it, either click on `Load demo`. Or use `drag & drop` module to add the SDF file containing the molecules of your choice. 
 
-<img src="images/import.png">
+![import](images/import.png)

@@ -4,8 +4,8 @@ While the molecular formula is calculated automatically from the chemical struct
 
 In the editor you are allowed to use groups like `Ala`, `Me`, ...
 
-<img src="groups.png">
+![groups](groups.png)
 
 The full list of allowed groups can be seen by clicking on the little grid icon.
 
-<img src="list.png">
+![list](list.png)

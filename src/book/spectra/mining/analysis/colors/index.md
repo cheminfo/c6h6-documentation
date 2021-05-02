@@ -3,8 +3,8 @@
 We have exposed a library that allows from a script to get distinct colors.
 
 ```js
-let colors=Color.getDistinctColorsAsString(16);
-data.report.colors=colors;
+let colors = Color.getDistinctColorsAsString(16);
+data.report.colors = colors;
 ```
 
 You can then format tables either to change the font color or the background color:
@@ -32,22 +32,16 @@ You can then format tables either to change the font color or the background col
   }
 </style>
 <div id="report">
-    <table>
+  <table>
     {% for color in data.report.colors %}
     <tr>
-      <td>
-        {{color}}
-      </td>
-      <td style="color: {{color}}">
-        {{color}}
-      </td>
-      <td style="background-color: {{color}}">
-        {{color}}
-      </td>
+      <td>{{color}}</td>
+      <td style="color: {{color}}">{{color}}</td>
+      <td style="background-color: {{color}}">{{color}}</td>
     </tr>
     {% endfor %}
   </table>
 </div>
 ```
 
-<img src='colors.png'>
+![colors](colors.png)
