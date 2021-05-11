@@ -1,26 +1,26 @@
-# Analyse high resolution mass spectra for peptides and nucleotides
+# Analyze high resolution mass spectra for peptides and nucleotides
 
 ## Introduction
 
-This tool allows to analyze complex mass spectra of polynucleotide or protein/peptide that may involves digestion, adducts, residue modification, etc.
+This tool allows analyzing complex mass spectra of polynucleotide or protein/peptide that may involve digestion, adducts, residue modification, etc.
 
 Please use a recent version of Google Chrome !!!
 
 ## Importing experimental data
 
-This tool can be either used in a LIMS or stand-alone. In the stand-alone mode you should either drag/drop your experimental spectrum as a tab-delimited text file or copy paste it (CTRL-V) while moving you mouse over the drop zone.
+This tool can be either used in a LIMS or stand-alone. In the stand-alone mode you should either drag/drop your experimental spectrum as a tab-delimited text file or copy and paste it (CTRL-V) while moving you mouse over the drop zone.
 
-<img src="images/paste.png">
+![Paste](images/paste.png)
 
-The list of available spectra will be displayed in the table and you may click on one of them to display it.
+The list of available spectra will be displayed in the table, and you may click on one of them to display it.
 
-<img src="images/list-spectra.png">
+![list spectra](images/list-spectra.png)
 
 ## Parameters
 
 ### Ionizations
 
-All the results are shown for the neutral molecule and it is therefore necessary to specify the ionization method. The methods may be entered as a comma separated list of all the allowed ionizations.
+All the results are shown for the neutral molecule, and it is therefore necessary to specify the ionization method. The methods may be entered as a comma separated list of all the allowed ionizations.
 
 You may as well specify multiple charges. Here are some examples of allowed patterns:
 

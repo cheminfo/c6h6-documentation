@@ -4,6 +4,6 @@ When loading an experimental spectrum the tool will automatically make a peak pi
 
 Zooming in the spectrum will progressively add more and more detailed peaks.
 
-If you are searching the molecular formula of an unknown products you should click on the label corresponding to the monoisotopic experimental mass.
+If you are searching the molecular formula of an unknown product you should click on the label corresponding to the monoisotopic experimental mass.
 
-<img src="peakPicking.gif">
+![Peak picking](peakPicking.gif)

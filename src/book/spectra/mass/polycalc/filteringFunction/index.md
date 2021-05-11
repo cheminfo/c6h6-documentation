@@ -5,12 +5,12 @@ available:
 
 - A, B, C ... the number of monomers
 - mm: theoretical monoisotopic mass
-- mz: thereotical m/z (taking into account ionzation)
+- mz: theoretical m/z (taking into account ionzation)
 - unsaturation: degree of unsaturation
 - charge: total charge
 - atoms.C, atoms.O, ...: number of corresponding atoms
 
-<img src="filterFct.png">
+![filter function](filterFct.png)
 
 Based on those variables it is possible to write complex conditions:
 

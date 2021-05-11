@@ -4,9 +4,9 @@ This tool calculates on-the-fly the possible molecular formula based on a monois
 
 The resulting table will contain green background lines if this molecular formula exists in PubChem. This is an excellent way to find plausible molecular formula of unknown products.
 
-<img src="results.png">
+![results](results.png)
 
-The results contains various columns:
+The results contain various columns:
 
 - the NON-IONIZED molecular formula
 - the monoisotopic mass of the NON-IONIZED molecule
