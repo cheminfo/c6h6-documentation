@@ -8,4 +8,4 @@ add charges in each part of the molecule.
 You will see an information about the molecular weight and monoisotopic mass of all
 the parts of the molecule in the `Molecular formula information box`
 
-<img src="mfInfo.png">
+![](mfInfo.png)

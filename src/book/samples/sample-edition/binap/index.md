@@ -4,4 +4,4 @@ The chemical structure editor (openchemlib) allows to specify the axial chiralit
 
 To specify the chirality you need to add a chiral bond on a **single-bond** that is next to the chiral bond.
 
-<img src="binap.png">
+![](binap.png)

@@ -4,4 +4,4 @@ When loading an IR spectrum, the application is aware if it was acquired in tran
 
 The application will remember your preferred mode for the next time.
 
-<img src="switch.gif">
+![Switch](switch.gif)

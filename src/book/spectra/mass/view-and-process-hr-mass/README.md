@@ -2,9 +2,9 @@
 
 ## Molecular formula from monoisotopic mass
 
-This tool allows to find possible molecular formula for a specific observed monoisotopic mass. When the elements are part of H, C, O, N, F, Cl, Br, I, Si, P and O the monoisotopic mass corresponds to the peak of the isotopic distribution that has the lowest mass.
+This tool allows finding possible molecular formula for a specific observed monoisotopic mass. When the elements are part of H, C, O, N, F, Cl, Br, I, Si, P and O the monoisotopic mass corresponds to the peak of the isotopic distribution that has the lowest mass.
 
-However by mass we don’t observe a monoisotopic mass directly but always a charged form. The molecule may be charged positively, negatively, multicharged or also modified by the addition of protons or other charged entities.
+However, by mass we don’t observe a monoisotopic mass directly but always a charged form. The molecule may be charged positively, negatively, multicharged or also modified by the addition of protons or other charged entities.
 
 This tool will consider the mass of the electron and the number of charge of the molecule.
 
@@ -13,10 +13,10 @@ This tool will consider the mass of the electron and the number of charge of the
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">
+      <th style=text-align=left}>
         <img src="images/preferences.png"/>
       </th>
-      <th style="text-align:left">
+      <th style=text-align=left>
         <ul>
           <li>Monoisotopic mass: the target observed monoisotopic mass</li>
           <li>Modification: what was added or remove in order to observe the monoisotopic
@@ -60,7 +60,9 @@ This tool will consider the mass of the electron and the number of charge of the
     </tr>
   </thead>
   <tbody></tbody>
-</table>## Pubchem candidates
+</table>
+
+## Pubchem candidates
 
 Using the button ‘Pubchem candidates’ you are able to list all the possible molecular formula that yields to the desired monoisotopic mass with the defined precision.
 
@@ -70,8 +72,8 @@ Couple of points to note:
 - PubChem does not provide the different parts of the molecule in the molecular formula
 - PubChem is not consistent with the monoisotopic mass they list on their website
 
-Therefore we have recalculate the molecular formula, monoisotopic mass, charge and molecular weight from the provided molfile. This allows us to have very accurate monoisotopic mass that also deals with isotopes.
+Therefore we have recalculated the molecular formula, monoisotopic mass, charge and molecular weight from the provided molfile. This allows us to have very accurate monoisotopic mass that also deals with isotopes.
 
 Please note that for the calculation of the monoisotopic mass we didn’t consider the charge !
 
-NB: only stable isotopes are considered !
+NB: only stable isotopes are considered!

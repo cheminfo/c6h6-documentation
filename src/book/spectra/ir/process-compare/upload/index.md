@@ -8,4 +8,4 @@ You can upload an IR spectrum in 3 different ways:
 
 The format of the file to be uploaded should be jcamp (extension .dx or .jdx), this is the usual format used on most IR spectrophotometers.
 
-<img src="upload.png">
+![Upload](upload.png)

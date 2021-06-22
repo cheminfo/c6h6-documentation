@@ -10,14 +10,14 @@ Using JSmol you can easily measure properties.
 ### Angle
 
 - double click on the first atom
-- single click ont he second atom
+- single click on the second atom
 - double click on the third atom
 
 ### Dihedral angle
 
 - double click on the first atom
-- single click ont he second atom
-- single click ont he third atom
-- double click on the forth atom
+- single click on the second atom
+- single click on the third atom
+- double click on the fourth atom
 
 <img src="measure.gif">
