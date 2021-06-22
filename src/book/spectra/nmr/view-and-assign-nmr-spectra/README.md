@@ -1,6 +1,6 @@
 # Peak picking and assignment
 
-![mages/peakPicking.png](images/peakPicking.png)
+![Peak picking image](images/peakPicking.png)
 
 As you open the tab the table will be filled with the Spectra available for the selected sample. Select one line to plot the corresponding NMR spectrum. We recommend you start from our Auto peak-picking. You will see the detected Ranges and their integrals just to the right of the spectrum. Select a range to see a list of the associated Signals with their multiplicities and coupling constants. Adjust the table values according to your own criterion. Use the J edition table to modify the multiplicity and coupling constants. A publication-ready report of your peak picking is automatically generated below the Spectra table. Don’t forget to Save your changes.
 

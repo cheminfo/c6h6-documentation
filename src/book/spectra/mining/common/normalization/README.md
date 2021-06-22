@@ -8,7 +8,7 @@ In order to compare spectra it is required to create a matrix. In this matrix ea
 - reduce the number of points in order to accelerate the analysis
 - apply matrix related processing allowing to normalize the columns
 
-<img src="images/preferences.png">
+![preferences](images/preferences.png)
 
 ## Filters
 
@@ -20,7 +20,7 @@ You may also apply various `Filters` that allows to normalize or transform the d
 - Normalize: set the sum of all the points to 1
 - Align: create a peak picking between `from` / `to` and calculate the mean X value between the `nbPeaks` highest peaks. The spectrum will be moved so that the mean has the `targetX` value.
 - Pareto: Pareto scaling, which uses the square root of standard deviation as the scaling factor, circumvents the amplification of noise by retaining a small portion of magnitude information. [10.1016/j.molstruc.2007.12.026](https://dx.doi.org/10.1016/j.molstruc.2007.12.026)
-- Savitzky-golay: smoothing spectra and calculate derivaties based on the following parameters:
+- Savitzky-golay: smoothing spectra and calculate derivatives based on the following parameters:
   - `windowSize`: smoothing window, must be an odd number
   - `derivative`: enter 0, 1 or 2
   - `polynomial`: the degree of the polynomial used to calculate SG
@@ -35,7 +35,7 @@ Only the information between the `From` and `To` values of the range will be con
 
 ## Exclusions
 
-Depending the analysis some region should be removed in order to improve the analysis. For example NMR spectroscopy in water yields to a large peak around 4.5ppm and using exclusion zone it can be removed from the analysis.
+Depending on the analysis some region should be removed in order to improve the analysis. For example NMR spectroscopy in water yields to a large peak around 4.5ppm and using exclusion zone it can be removed from the analysis.
 
 ## Number of points
 
@@ -55,7 +55,7 @@ Some filters are using the columns for further processing like:
 
 The list of the spectra in the dataset is displayed in the following table:
 
-<img src="images/memory.png">
+![memory](images/memory.png)
 
 In some cases it is not possible to keep in memory the original spectra and the system will only keep the normalized spectra. Therefore it will not be possible to change the normalization parameters anymore.
 
@@ -63,6 +63,6 @@ In some cases it is not possible to keep in memory the original spectra and the 
 
 A preview of the normalized spectra as well as the exclusions zones will be displayed. This allows to fine tune the processing.
 
-<img src="images/preview.png">
+![preview](images/preview.png)
 
 The superimposed spectra can be manipulated without numerous [advanced features described here](../visualization/README.md).

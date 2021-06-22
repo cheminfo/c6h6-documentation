@@ -1,6 +1,6 @@
 # Create analytical report from spectra
 
-This program allows to define and apply analytical procedure on one or more spectra. The general principle is:
+This program allows defining and apply analytical procedure on one or more spectra. The general principle is:
 
 - select spectra
 - define parameters for spectra normalization
@@ -13,7 +13,7 @@ This software allows either to create new analytical report of to use an existin
 
 ## Spectra selection, normalization and previsualization
 
-The first step is to select the spectra and you may follow this [tutorial](spectraAnalysis_spectraSelection)
+The first step is to select the spectra, and you may follow this [tutorial](spectraAnalysis_spectraSelection)
 
 Once spectra have been selected, data normalization filters can be applied and [more information is available here](spectraAnalysis_normalization).
 
@@ -23,7 +23,7 @@ The superimposed spectra can be manipulated without numerous [advanced features 
 
 If analytical procedure has been defined previously it can be loaded by clicking on the `list` icon.
 
-<img src="images/load-save.png">
+![load save](images/load-save.png)
 
 By clicking on the `disk` icon analytical procedure can be saved.
 
@@ -39,11 +39,11 @@ The following parameters are considered when loading / saving analytical procedu
 
 In the `Check results` tab you are able to define ranges in the spectrum and a variable name for each of the range as well as a description.
 
-<img src="images/add-ranges.gif">
+![add ranges](images/add-ranges.gif)
 
-To define a zoon press the `ALT` key and then click once on the left, once on the right of the range. A variable name will be automatically created and can easily be renamed from the table. A description for each variable can also be specified.
+To define a zone press the `ALT` key and then click once on the left, once on the right of the range. A variable name will be automatically created and can easily be renamed from the table. A description for each variable can also be specified.
 
-<img src="images/edit-ranges.gif">
+![edit ranges](images/edit-ranges.gif)
 
 ## Create a function to apply on the spectra
 
@@ -56,7 +56,7 @@ To define a formula you need to write a javascript code that will modify the var
 
 At anytime you can check the content of the variable `data` using the JSON explorer.
 
-<img src="images/data-explorer.png">
+![data explorer](images/data-explorer.png)
 
 A basic example would be:
 
@@ -117,18 +117,18 @@ for (let spectrum of data.spectra) {
 data.report.chart = {
   axes: {
     x: {
-      label: 'Sample number'
+      label: "Sample number",
     },
     y: {
-      label: 'Ratio'
-    }
+      label: "Ratio",
+    },
   },
   series: [
     {
       data: points,
-      label: 'customLabel'
-    }
-  ]
+      label: "customLabel",
+    },
+  ],
 };
 ```
 
@@ -136,14 +136,14 @@ In order to test the script you need to click on `Generate results`. You will se
 
 ## Design a report (Twig template)
 
-The last tab, `Design report`, allows to create advanced reports for the analysis.
+The last tab, `Design report`, allows creating advanced reports for the analysis.
 
 The reports are based on the
 [Twig template engine](https://twig.symfony.com/doc/2.x/)
 
 The report is principally written in HTML with at the top some CSS information. In is also possible to include an inline image (like the SVG of the company logo).
 
-In order to limit the CSS to the report it is important to wrap the report in a div and to name it. Like for example `<div id="report">`. All the CSS selector with therefore start with `#report` to limit the css to this specific div.
+In order to limit the CSS to the report it is important to wrap the report in a div and to name it. Like for example `<div id="report">`. All the CSS selector with therefore start with `#report` to limit the CSS to this specific div.
 
 Example:
 
@@ -266,9 +266,7 @@ Example:
     {% endfor %}
   </table>
 
-  <h1>
-    Global report
-  </h1>
+  <h1>Global report</h1>
   <table>
     <tr>
       <th>Over 10</th>
@@ -290,4 +288,4 @@ Example:
 </div>
 ```
 
-<img src="images/report.png">
+![report](images/report.png)

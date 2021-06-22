@@ -18,6 +18,6 @@ Using JSmol you can easily measure properties. Some shortcuts are outlined below
 - double click on the first atom
 - single click on the second atom
 - single click on the third atom
-- double click on the forth atom
+- double click on the fourth atom
 
 <img src="measure.gif">

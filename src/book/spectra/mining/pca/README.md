@@ -1,8 +1,8 @@
 # Calculate PCA for spectra
 
-While superimposing spectra allows to check differences between 2 or 3 experiments it become tedious to compare a large set of data.
+While superimposing spectra allows checking differences between 2 or 3 experiments it become tedious to compare a large set of data.
 
-Many data mining algorithms may help in those cases and here we propose to analyse the data using principal component analysis.
+Many data mining algorithms may help in those cases and here we propose to analyze the data using principal component analysis.
 
 Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (here spectra) into a set of values of linearly uncorrelated variables called principal components. If there are n observations with p variables, then the number of distinct principal components is min(n-1,p). This transformation is defined in such a way that the first principal component has the largest possible variance (that is, accounts for as much of the variability in the data as possible), and each succeeding component in turn has the highest variance possible under the constraint that it is orthogonal to the preceding components. The resulting vectors (each being a linear combination of the variables and containing n observations) are an uncorrelated orthogonal basis set. PCA is sensitive to the relative scaling of the original variables.
 
@@ -17,7 +17,7 @@ The workflow is the following:
 
 ## Spectra selection, normalization and previsualization
 
-The first step is to select the spectra and you may follow this [tutorial](spectraAnalysis_spectraSelection)
+The first step is to select the spectra, and you may follow this [tutorial](spectraAnalysis_spectraSelection)
 
 Once spectra have been selected, data normalization filters can be applied and [more information is available here](spectraAnalysis_normalization).
 
@@ -29,11 +29,11 @@ In order to generate the PCA model you should click on the `Recalculate PCA` but
 
 Even after creating the model you may still add new spectra. Those spectra will be projected to the new PCA space. The spectra used for the calculations are represented using a filled circle while the one projected are represented with a circle.
 
-<img src="images/result.png">
+![result](images/result.png)
 
-By default the each sample will have a different color.
+By default each sample will have a different color.
 
-<img src="images/samplePCA.png">
+![sample PCA](images/samplePCA.png)
 
 In the list of selected sample you can check which spectra are used for the PCA calculation and which one are just projected on the model.
 
@@ -41,12 +41,12 @@ In the list of selected sample you can check which spectra are used for the PCA 
 
 By selecting `PCA PC` you can check the various principal component as well as the explained variance.
 
-While PC1 versus PC2 offers usually a good separation it it not always the best that can be achived and in this view we plot the 4 first principal components against each other.
+While PC1 versus PC2 offers usually a good separation it is not always the best that can be achieved and in this view we plot the 4 first principal components against each other.
 
 In this specific example we can see that the best separation is obtained when using PC2 versus PC3.
 
-<img src="images/pcaVersus.png">
+![pca versus](images/pcaVersus.png)
 
 ## References
 
-* doi.org/10.1007/s11483-012-9279-7
+- doi.org/10.1007/s11483-012-9279-7

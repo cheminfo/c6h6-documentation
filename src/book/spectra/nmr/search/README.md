@@ -2,29 +2,29 @@
 
 This tool is designed to search by NMR chemical shifts that may be practical to find similar pure products or identify products in complex mixture like in the case of metabolomics. In order to select the chemical shifts you may either enter directly the values in the table `Ranges to search` or ALT + CLICK directly on the spectrum.
 
-<img src="images/image9.png">
+![image9](images/image9.png)
 
-You may at any time either delete one of the lines by clicking on the trash icon in front of the row or you may delete all the chemical shifts by clicking on the trash in the top right of the table. You may as well specify the multiplicity. The score will receive some bonus if the multiplicity match (and can therefore have a score over one).
+You may at any time either delete one of the lines by clicking on the trash icon in front of the row, or you may delete all the chemical shifts by clicking on the trash in the top right of the table. You may as well specify the multiplicity. The score will receive some bonus if the multiplicity match (and can therefore have a score over one).
 
 ## Adding an experimental spectrum
 
 Experimental spectrum can be added either by click on `Load demo`, by drag & drop a Jcamp file or by clicking on an existing spectrum from the database. Those spectra will be filtered based on the `Exclusion zones`.
 
-<img src="images/image3.png">
+![](images/image3.png)
 
 The exclusion zones will be indicated on the spectrum by a red line.
 
-<img src="images/image5.png">
+![](images/image5.png)
 
 ## Specify the allowed error and display the result
 
-While searching for similar spectra the program will allowed an error on the chemical shift. This error is specified in:
+While searching for similar spectra the program will allow an error on the chemical shift. This error is specified in:
 
-<img src="images/image7.png">
+![](images/image7.png)
 
-Each peak will be represented as a allowed zone by a blue rectangle.
+Each peak will be represented as an allowed zone by a blue rectangle.
 
-<img src="images/image8.png">
+![](images/image8.png)
 
 And the signals of the 10 best matches will be represented as 10 different lines. The color will represent the score:
 
@@ -34,13 +34,13 @@ And the signals of the 10 best matches will be represented as 10 different lines
 
 Mouse over the annotations will highlight the corresponding molecule. If you click on the annotation you will get the detailed information.
 
-<img src="images/image4.png">
+![](images/image4.png)
 
 ## Interactive results ...
 
 Mouse over in the list of reference products will highlight the region where peaks are expected
 
-<img src="images/image2.png">
+![](images/image2.png)
 
 This allows to quickly browse through the list of the reference spectra. If one of the reference looks promising, just click on it to display the reference corresponding NMR spectrum.
 
@@ -56,11 +56,11 @@ Or combine queries for the chemical shifts as well as the molecular formula cont
 
 delta:2..2.1 delta:3..3.4 mf:C10
 
-<img src="images/image6.png">
+![](images/image6.png)
 
 ## The spectra displayer
 
-<img src="images/image1.png">
+![](images/image1.png)
 
 The following options are available in the spectra displayer :
 
@@ -68,5 +68,5 @@ The following options are available in the spectra displayer :
 - double click: zoom out = display the full spectra
 - SHIFT + double click : zoom out progressively
 - scroll wheel : vertical scale
-- select a serie (click on the corresponding line in the legend) + scroll wheel : vertical scale of a specific serie
-- hide a serie by clicking on the corresponding eye in the legend
+- select a series (click on the corresponding line in the legend) + scroll wheel : vertical scale of a specific series
+- hide a series by clicking on the corresponding eye in the legend
