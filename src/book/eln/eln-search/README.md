@@ -24,7 +24,7 @@ Then, draw a structure in the left module.
 ![Left module](images/leftmodule.png)
 
 The list of matching structures would be displayed at the center module. 
-You can also know which of the interested structure is reagent or product by checking the right two columns.
+You can also know which of the structures is reagent or product by checking the right two columns.
 
 ![Center module](images/centermodule.png)
 
