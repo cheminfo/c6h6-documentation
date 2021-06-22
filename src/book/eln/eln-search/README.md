@@ -1,23 +1,44 @@
-## Search reactions by structure
+# Search reactions by structure
 
-Choose filter group options:
+This tool could be used to search the chemical reactions you want by only draw a chemical structure even though substrate or product that might be useful for your synthesis. 
+## How to use
+First, choose the filter group options at the group dropdown box on the top left:
 
-- `all` searches in all the reactions you have access to
-- `mine` searches in all reactions you have created
+![Filter](images/filter.png)
+- `all` : searches in all the reactions you have access to
+- `mine` : searches in all reactions you have created
 - search for a specific group to which you belong.
 
-Select if you would like to search for a reagent or a product.
 
-Draw a structure in the left module.
 
-Choose between two Search modes:
 
-- substructure: search for samples containing the given substructure
-- similarity: search for samples with a similar structure.
+Next, choose between the two search modes at the search mode dropdown box on the bottom in left module:
 
-The center module displays the list of matching structures. Select the one you want.
-The right module displays the list of samples associated with the selected structure. Double clicking a row will take you back to the main tab, with the corresponding sample selected in the List of selected samples.
+![Search mode](images/searchmode.png)
 
-Double clicking a row in the center module will take you directly to the first matching sample.
+- `substructure` : search for samples containing the given substructure
+- `similarity` : search for samples with a similar structure.
+
+Then, draw a structure in the left module.
+
+![Left module](images/leftmodule.png)
+
+The list of matching structures would be displayed at the center module. 
+You can also know which of the structures is reagent or product by checking the right two columns.
+
+![Center module](images/centermodule.png)
+
+
+After you selected the one you want, the right module will display the list of samples associated with the selected structure including reference (name), kind (reagent/product) and yield.
+
+![List of reactions](images/rightmodule.png)
+When you click the one you want, you will see a preview of the reaction at the bottom module.
+
+![Reaction preview](images/preview.png)
+Double clicking the row you want in the __right module__ will take you back to the main tab, with the corresponding sample selected in the list of selected samples.
+
+__or__
+
+Double clicking the row you want in the __center module__ will take you directly to the first matching sample.
 
 Structure search uses the algorithm implemented in DataWarrior. They are open source and available as part of openchemlib (https://github.com/actelion/openchemlib, https://github.com/cheminfo/openchemlib-js).
