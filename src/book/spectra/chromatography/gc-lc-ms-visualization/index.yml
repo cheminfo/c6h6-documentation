@@ -2,6 +2,9 @@ description: View and assign chromatogram
 uuid: 088e53bb9d86f832fa90961ee70a17aa
 tips:
   - minRev: 373
+    title: Chromatogram Visualisation
+    name: chromatogramVisualisation
+  - minRev: 373
     title: Add trace from mass spectrum
     name: addTraceForMass
   - minRev: 373
